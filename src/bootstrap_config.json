@@ -212,7 +212,7 @@
     "@jumbotron-color": "inherit",
     "@jumbotron-bg": "@gray",
     "@jumbotron-heading-color": "inherit",
-    "@jumbotron-font-size": "ceil((@font-size-base * 1.5))",
+    "@jumbotron-font-size": "ceil((@font-size-base * 1))",
     "@state-success-text": "#3c763d",
     "@state-success-bg": "#dff0d8",
     "@state-success-border": "darken(spin(@state-success-bg, -10), 5%)",
