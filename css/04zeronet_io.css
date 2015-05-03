@@ -1,0 +1,29 @@
+.zeronet_font {
+  font-family: 'Text Me One';
+  font-weight: bold;
+}
+
+.slogan {
+  margin-top: 30px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar-logo {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.centered-feat {
+  margin-top: 80px;
+}
+
+.centered-feat h2 {
+  font-weight: 300;
+}
+
+.centered-feat ul {
+  line-height: 1.6;
+}
