@@ -20,12 +20,13 @@ a:active { background-color: rgba(255,255,255,0.1); }
 .block-50 { width: 50% }
 .block-67 { width: 67% }
 .block-100 { width: 100%; transform: TranslateY(0px); opacity: 1 }
-.block ul { padding: 30px; margin: 0px; padding-bottom: 0px; padding-right: 0px; margin-bottom: -20px; }
+.block ul { margin: 0px; margin-bottom: -20px; padding: 0px; padding-left: 30px; top: 50%; position: absolute; transform: translateY(-50%); }
 .block li { font-size: 24px; margin-bottom: 25px; list-style-type: none; border-left: 1px solid #A262F3; padding-left: 15px; }
+.block li:last-child { margin-bottom: 0px }
 .block-detail .button { border-color: rgba(19, 171, 131, 0.24); color: #13A980; margin: 20px; margin-bottom: 10px; display: inline-block; }
 .block-detail .button:hover { border-color: rgba(19, 171, 131, 1); }
 
-.arrow-left:before { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-right-color: #ffffff; border-width: 16px; margin-top: 33px; margin-left: -52px; }
+.arrow-left:before { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-right-color: #ffffff; border-width: 16px; margin-top: 53px; margin-left: -52px; }
 .arrow-right:before { border: solid transparent; content: " "; height: 0; width: 0; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-left-color: #ffffff; border-width: 16px; float: right; left: 50px; position: relative; margin-top: 28px; }
 
 .head-top { background: linear-gradient(45deg, #6B14D3 0, #7A26E2 25%, #4962DD 60%); color: white; text-align: center; padding: 70px 10px; min-height: 556px; }
@@ -38,6 +39,7 @@ a:active { background-color: rgba(255,255,255,0.1); }
 
 /*.block-p2p { background-color: #E6E9ED; color: #555; }*/
 .block-p2p { background-color: #5368C3; color: #FFF; background: #5368C3 url('../img/p2p.png') center center repeat }
+.block-p2p-detail { padding-top: 0px; position: relative }
 .block-simple { background-color: #FFDE55; }
 .block-namecoin { background: #EC6F6D url('../img/namecoin.png') top left no-repeat }
 .block-namecoin-detail h3 { color: #EC6F6D; }
