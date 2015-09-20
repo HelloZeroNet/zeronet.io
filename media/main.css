@@ -19,7 +19,7 @@ a:active { background-color: rgba(255,255,255,0.1); }
 .block-34 { width: 34% }
 .block-50 { width: 50% }
 .block-67 { width: 67% }
-.block-100 { width: 100%; -webkit-transform: TranslateY(0px); transform: TranslateY(0px); opacity: 1 }
+.block-100 { width: 100%; -webkit-transform: translateY(0px); transform: translateY(0px); opacity: 1 }
 .block ul { margin: 0px; margin-bottom: -20px; padding: 0px; padding-left: 30px; top: 50%; position: absolute; transform: translateY(-50%); -webkit-transform: translateY(-50%); }
 .block li { font-size: 24px; margin-bottom: 25px; list-style-type: none; border-left: 1px solid #A262F3; padding-left: 15px; }
 .block li:last-child { margin-bottom: 0px }
@@ -38,7 +38,7 @@ a:active { background-color: rgba(255,255,255,0.1); }
 .platform-windows .head-top .download-other { display: none }
 
 /*.block-p2p { background-color: #E6E9ED; color: #555; }*/
-.block-p2p { background-color: #5368C3; color: #FFF; background: #5368C3 url('../img/p2p.png') center center repeat }
+.block-p2p { background-color: #5368C3; color: #FFF; background: #0F0F0F url('../img/p2p-2.png') top left repeat }
 .block-p2p-detail { padding-top: 0px; position: relative }
 .block-simple { background-color: #FFDE55; }
 .block-namecoin { background: #EC6F6D url('../img/namecoin.png') top left no-repeat }
