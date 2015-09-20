@@ -14,13 +14,13 @@ a:active { background-color: rgba(255,255,255,0.1); }
 .button:hover { border: 1px solid rgba(255, 255, 255, 1); transition: none; }
 .button-container { display: inline-block; vertical-align: top; text-align: center; }
 
-.block { padding: 20px; min-height: 350px; float: left; box-sizing: border-box; padding-bottom: 0px; transform: TranslateY(100px); opacity: 0; transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+.block { padding: 20px; min-height: 350px; float: left; box-sizing: border-box; padding-bottom: 0px; -webkit-transform: translateY(100px); transform: TranslateY(100px); opacity: 0; transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
 .block-33 { width: 33% }
 .block-34 { width: 34% }
 .block-50 { width: 50% }
 .block-67 { width: 67% }
-.block-100 { width: 100%; transform: TranslateY(0px); opacity: 1 }
-.block ul { margin: 0px; margin-bottom: -20px; padding: 0px; padding-left: 30px; top: 50%; position: absolute; transform: translateY(-50%); }
+.block-100 { width: 100%; -webkit-transform: TranslateY(0px); transform: TranslateY(0px); opacity: 1 }
+.block ul { margin: 0px; margin-bottom: -20px; padding: 0px; padding-left: 30px; top: 50%; position: absolute; transform: translateY(-50%); -webkit-transform: translateY(-50%); }
 .block li { font-size: 24px; margin-bottom: 25px; list-style-type: none; border-left: 1px solid #A262F3; padding-left: 15px; }
 .block li:last-child { margin-bottom: 0px }
 .block-detail .button { border-color: rgba(19, 171, 131, 0.24); color: #13A980; margin: 20px; margin-bottom: 10px; display: inline-block; }
