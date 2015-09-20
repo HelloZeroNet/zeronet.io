@@ -14,7 +14,7 @@ a:active { background-color: rgba(255,255,255,0.1); }
 .button:hover { border: 1px solid rgba(255, 255, 255, 1); transition: none; }
 .button-container { display: inline-block; vertical-align: top; text-align: center; }
 
-.block { padding: 20px; min-height: 350px; float: left; box-sizing: border-box; padding-bottom: 0px; -webkit-transform: translateY(100px); transform: TranslateY(100px); opacity: 0; transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+.block { padding: 20px; min-height: 350px; float: left; box-sizing: border-box; padding-bottom: 0px; transform: TranslateY(100px); opacity: 0; transition: 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
 .block-33 { width: 33% }
 .block-34 { width: 34% }
 .block-50 { width: 50% }
