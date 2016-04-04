@@ -35,11 +35,12 @@ a:active { background-color: rgba(255,255,255,0.1); }
 .head-top h1 { display: inline-block; border: 5px solid white; height: 97px; padding: 10px; line-height: 100px; }
 .head-top a { color: white; }
 .head-top .download { margin-top: 44px; line-height: 44px; }
-.head-top .download-windows, .head-top .download-mac, .head-top .download-linux { display: none }
+.head-top .download-windows, .head-top .download-mac, .head-top .download-oldmac, .head-top .download-linux { display: none }
 .platform-windows .head-top .download-windows { display: block }
 .platform-mac .head-top .download-mac { display: block }
+.platform-oldmac .head-top .download-oldmac { display: block }
 .platform-linux .head-top .download-linux { display: block }
-.platform-windows .head-top .download-other, .platform-mac .head-top .download-other, .platform-linux .head-top .download-other { display: none }
+.platform-windows .head-top .download-other, .platform-mac .head-top .download-other, .platform-oldmac .head-top .download-other, .platform-linux .head-top .download-other { display: none }
 
 /*.block-p2p { background-color: #E6E9ED; color: #555; }*/
 .block-p2p { background-color: #5368C3; color: #FFF; background: #2D2D2D url('../img/p2p-3.png') bottom left no-repeat }
