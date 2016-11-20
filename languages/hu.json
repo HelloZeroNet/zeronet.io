@@ -1,0 +1,62 @@
+{
+	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "ZeroNet: Decentralizált weboldalak Bitcoin kriptográfiát és a BitTorrent hálózatot használva",
+	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "Nyílt, szabad és cenzúrázatlan weboldalak,<br> Bitcoin kriptográfiát és a BitTorrent hálózatot használva",
+
+	"Download for Windows": "Letöltés Windows-ra",
+	"Unpack &middot; Run zeronet.cmd": "Tömörítsd ki &middot; Futtasd a zeronet.cmd fájlt",
+	"or": "vagy",
+	"Other platforms and source code": "Más platformok és a forráskód",
+	"Download for macOS": "Letöltés macOS-re",
+	"Unpack &middot; Run ZeroNet": "Tömörítsd ki &middot; Futtasd a ZeroNet fájlt",
+	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "Tömörítsd ki &middot; Nyisd meg a Terminal programot &middot; Dobd rá a ZeroNet fájlt és nyomj egy enter-t.",
+	"Download for Linux 64bit": "Letöltés Linux-ra (64bit)",
+	"Install instructions": "Telepítési lépések",
+	"Windows, Linux, Mac supported": "Windows, Linux, Mac támogatott",
+
+	"Peer-to-Peer": "Szerverek nélkül",
+	"Your content distributed directly to other visitors without any central server.": "A tartalmak közvetlenül a látogatók között cserélődnek, központi szerver nélkül.",
+
+	"Uncensored": "Cenzúrázhatatlan",
+	"It's nowhere because it's everywhere!": "Sehol nincs, mert mindenhol ott van!",
+	"No hosting costs": "Költségek nélkül",
+	"Sites are served by visitors.": "Az oldalak a látogatóktól érhetőek el.",
+	"Always accessible": "Mindig elérhető",
+	"No single point of failure.": "Nincs központi hiba lehetőség.",
+
+	"Simple": "Egyszerű",
+	"No configuration needed:": "Nem szükséges konfiguráció:",
+	"Download, unpack and start using it.": "Töltsd le, tömörítsd ki és használd.",
+
+	".bit domains": ".bit domain nevek",
+	"Decentralized domains using Namecoin cryptocurrency.": "Decentralizált domain nevek a Namecoin kripto-valutát használva.",
+
+	"No passwords": "Jelszó mentes",
+	"Your account is protected by same cryptography as your Bitcoin wallet.": "Az adataidat ugyanaz a kriptográfia védi, mint a Bitcoin tárcádat.",
+
+	"Fast": "Gyors",
+	"Page response time is not limited by your connection speed.": "Az oldalak megjelenítési ideje nem függ az Internet kapcsolatod sebességétől.",
+
+	"Dynamic content": "Dinamikus tartalmak",
+	"Real-time updated, multi-user websites.": "Valós időben frissített, több felhasználós weboldalak.",
+
+	"How does it work?": "Hogyan működik?",
+
+	"Works everywhere": "Mindenhol elérhető",
+	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "Bármelyik modern böngészőn,<br>Windows, Linux vagy Mac platformon.",
+
+	"Anonymity": "Anonimitás",
+	"You can easily hide your IP address using the Tor network.": "IP cím elrejtése egyszerűen, a Tor hálózat használatával",
+	"Read the FAQ": "Gyakori kérdések",
+
+	"Offline": "Offline",
+	"Browse the sites you&#39;re seeding even if your internet connection is down.": "A korábban meglátogatott oldalak internet nélkül is elérhetőek",
+
+	"Open Source": "Nyílt forráskód",
+	"Developed by the community for the community.": "A közösség által fejlesztve, a közösségnek.",
+	"Please donate to keep this project alive": "Támogatás a project életben tartása érdekében",
+
+	"We believe in": "Hiszünk a",
+	"open, free, and uncensored": "nyílt, szabad és cenzúrázatlan",
+	"network and communication.": "hálózatban és kommunikációban."
+
+}
