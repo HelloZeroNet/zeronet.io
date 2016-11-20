@@ -8,7 +8,8 @@ h5 { font-size: inherit; color: #6A1CCC; margin: 0px; }
 
 a { border-bottom: 1px solid rgba(255,255,255,0.5); transition: all 0.3s; text-decoration: none; }
 a:hover { border-bottom: 1px solid rgba(255,255,255,1); transition: none; }
-a:active { background-color: rgba(255,255,255,0.1); }
+a:active { background-color: rgba(255,255,255,0.1) }
+a:focus { transition: all 0.3s }
 
 .button { padding: 10px 20px; border: 1px solid rgba(255, 255, 255, 0.5); border-radius: 3px; transition: all 0.3s; font-size: 130%; }
 .button:hover { border: 1px solid rgba(255, 255, 255, 1); transition: none; }
@@ -31,7 +32,7 @@ a:active { background-color: rgba(255,255,255,0.1); }
 .arrow-left:before { border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-right-color: #ffffff; border-width: 16px; margin-top: 53px; margin-left: -52px; }
 .arrow-right:before { border: solid transparent; content: " "; height: 0; width: 0; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-left-color: #ffffff; border-width: 16px; float: right; left: 50px; position: relative; margin-top: 28px; }
 
-.head-top { background: linear-gradient(45deg, #6B14D3 0, #7A26E2 25%, #4962DD 60%); color: white; text-align: center; padding: 70px 10px; min-height: 556px; }
+.head-top { background: #4962DD; background: linear-gradient(45deg, #6B14D3 0, #7A26E2 25%, #4962DD 60%); color: white; text-align: center; padding: 70px 10px; min-height: 556px; }
 .head-top h1 { display: inline-block; border: 5px solid white; height: 97px; padding: 10px; line-height: 100px; }
 .head-top a { color: white; }
 .head-top .download { margin-top: 44px; line-height: 44px; }
@@ -67,6 +68,18 @@ a:active { background-color: rgba(255,255,255,0.1); }
 .block-follow .icon:active { fill: #4962DD; transition: none; }
 
 .hosted { font-size: 15px; position: absolute; right: 10px; opacity: 0.7; height: 0px; margin-top: 10px; }
+
+/* Language menu */
+.icon-lang { height: 16px; width: 16px; fill: white; vertical-align: middle; margin-right: 5px; }
+#language_changer { position: absolute; right: 0px; }
+#language { border: 0; color: white; text-transform: uppercase; font-size: 11px; text-align: right; float: right; padding: 15px }
+#language_menu {
+	visibility: hidden; opacity: 0; clear: both; text-align: right; background-color: white; border-radius: 0px; pointer-events: none;
+	border: none; box-shadow: 0px 5px 10px rgba(0,0,0,0.2); margin-top: 27px; transition: all 0.3s; margin-right: 10px;
+}
+.opened #language_menu { visibility: visible; opacity: 1; pointer-events: all; }
+#language_menu a { display: block; padding: 10px 20px; border: none; color: black }
+#language_menu a:hover { background-color: #EEE }
 
 /* Medium screen */
 @media only screen and (max-width: 1200px) {
