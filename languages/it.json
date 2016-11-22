@@ -1,0 +1,62 @@
+{
+	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "ZeroNet: Siti web decentralizzati che usano la crittografia di Bitcoin e la rete BitTorrent",
+	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "Siti web aperti, liberi e incensurabili,<br>che usano la crittografia di Bitcoin e la rete BitTorrent",
+
+	"Download for Windows": "Scarica per Windows",
+	"Unpack &middot; Run zeronet.cmd": "Spacchetta &middot; Esegui zeronet.cmd",
+	"o": "oppure",
+	"Other platforms and source code": "Altre piattaforme e codice sorgente",
+	"Download for macOS": "Scarica per macOS",
+	"Unpack &middot; Run ZeroNet": "Spacchetta &middot; Esegui ZeroNet",
+	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "Spacchetta &middot; Apri l'applicazione Terminal &middot; Trascinaci sopra ZeroNet e premi invio.",
+	"Download for Linux 64bit": "Scarica per Linux 64bit",
+	"Install instructions": "Istruzioni di installazione",
+	"Windows, Linux, Mac supported": "Supportati Windows, Linux e Mac",
+
+	"Peer-to-Peer": "Peer-to-Peer",
+	"Your content distributed directly to other visitors without any central server.": "Il tuo contenuto è distribuito direttamente ad altri visitatori senza alcun server centrale.",
+
+	"Uncensored": "Incensurato",
+	"It's nowhere because it's everywhere!": "Non è da nessuna parte perché è ovunque!",
+	"No hosting costs": "Non ci sono costi di hosting",
+	"Sites are served by visitors.": "I siti sono mantenuti dai visitatori.",
+	"Always accessible": "Sempre accessibile",
+	"No single point of failure.": "Nessun punto debole",
+
+	"Simple": "Semplice",
+	"No configuration needed:": "Nessuna configurazione richiesta:",
+	"Download, unpack and start using it.": "Scarica, spacchetta e inizia ad utilizzarlo.",
+
+	".bit domains": "Domini .bit",
+	"Decentralized domains using Namecoin cryptocurrency.": "Domini decentralizzati usando la crittovaluta Namecoin.",
+
+	"No passwords": "Nessuna password",
+	"Your account is protected by same cryptography as your Bitcoin wallet.": "Il tuo account è protetto dalla stessa crittografia del tuo portamonete Bitcoin.",
+
+	"Fast": "Veloce",
+	"Page response time is not limited by your connection speed.": "Il tempo di risposta della pagina non è limitato dalla velocità della tua connessione.",
+
+	"Dynamic content": "Contenuto dinamico",
+	"Real-time updated, multi-user websites.": "Aggiornato in tempo-reale, siti multi-utente.",
+
+	"How does it work?": "Come funziona?",
+
+	"Works everywhere": "Funziona ovunque",
+	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "Supporta tutti i moderni browser sulle<br>piattaforme Windows, Linux o Mac",
+
+	"Anonymity": "Anonimia",
+	"You can easily hide your IP address using the Tor network.": "Puoi facilmente nascondere il tuo indirizzo IP usando la rete Tor.",
+	"Read the FAQ": "Leggi le FAQ",
+
+	"Offline": "Disconnesso",
+	"Browse the sites you&#39;re seeding even if your internet connection is down.": "Naviga i siti che stai diffondendo anche se la tua connessione ad Internet va giù.",
+
+	"Open Source": "Open Source",
+	"Developed by the community for the community.": "Sviluppato dalla comunità per la comunità.",
+	"Please donate to keep this project alive": "Si prega di donare a mantenere vivo questo progetto",
+
+	"We believe in": "Noi crediamo nelle",
+	"open, free, and uncensored": "reti e comunicazioni",
+	"network and communication.": "aperte, libere e incensurate."
+
+}
