@@ -1,0 +1,63 @@
+{
+	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "ZeroNet: 使用 Bitcoin 加密和 BitTorrent 網路的去中心化網路",
+	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "開放，自由，去中心化的網路，<br>使用 Bitcoin 加密和 BitTorrent 網路",
+
+	"Download for Windows": "下載 Windows 版本",
+	"Unpack &middot; Run zeronet.cmd": "解壓縮 &middot; 執行 zeronet.cmd",
+	"or": "或者",
+	"Other platforms and source code": "獲取適用於其他平台的安裝套件和原始碼",
+	"Download for macOS": "下載 macOS 版本",
+	"Unpack &middot; Run ZeroNet": "解压缩 &middot; 執行 ZeroNet",
+	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "解压缩 &middot; 打开终端 &middot; 把 ZeroNet 拖进去",
+	"Download for Linux 64bit": "下載 Linux 64bit 版本",
+	"Unpack &middot; Run ZeroNet.sh": "解压缩 &middot; 執行 ZeroNet.sh",
+	"Install instructions": "安裝指南",
+	"Windows, Linux, Mac supported": "支援 Windows, Linux, Mac 平台",
+
+	"Peer-to-Peer": "對等",
+	"Your content distributed directly to other visitors without any central server.": "你的內容將被去中心化的直接分發給其他訪客，不需要任何的中央伺服器。",
+
+	"Uncensored": "去中心化",
+	"It's nowhere because it's everywhere!": "節點無處不在！",
+	"No hosting costs": "無代管費用",
+	"Sites are served by visitors.": "站點由訪問者代管。",
+	"Always accessible": "永遠線上",
+	"No single point of failure.": "不會受單點故障影響。",
+
+	"Simple": "易於使用",
+	"No configuration needed:": "毋需設定",
+	"Download, unpack and start using it.": "下載，解壓，直接執行！",
+
+	".bit domains": ".bit 域名",
+	"Decentralized domains using Namecoin cryptocurrency.": "使用 Namecoin 加密貨幣的去中心化域名",
+
+	"No passwords": "無需密碼",
+	"Your account is protected by same cryptography as your Bitcoin wallet.": "使用與比特幣錢包相同的加密方法來保護你的帳戶",
+
+	"Fast": "高速",
+	"Page response time is not limited by your connection speed.": "頁面載入速度不會受限於你的網際網路連接速度",
+
+	"Dynamic content": "動態內容",
+	"Real-time updated, multi-user websites.": "實時更新，支持多用戶站點",
+
+	"How does it work?": "原理",
+
+	"Works everywhere": "跨平台支援",
+	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "支持任何先進的瀏覽器執行于<br>Windows, Linux 或 Mac 平台",
+
+	"Anonymity": "匿名",
+	"You can easily hide your IP address using the Tor network.": "你可以通過 Tor 網路方便的隱藏自己的 IP 位址",
+	"Read the FAQ": "閱讀常見問題解答",
+
+	"Offline": "可離線使用",
+	"Browse the sites you&#39;re seeding even if your internet connection is down.": "在沒有網際網路連線的情況下也可以瀏覽儲存過的站點",
+
+	"Open Source": "開放原始碼",
+	"Developed by the community for the community.": "社群開發，社群支援",
+	"Please donate to keep this project alive": "請捐助來維持這個項目的運行",
+
+	"We believe in": "我們相信",
+	"open, free, and uncensored": "開放，自由，去中心化的",
+	"network and communication.": "網路與通訊"
+
+}
