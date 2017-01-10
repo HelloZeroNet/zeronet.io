@@ -1,5 +1,5 @@
-body { background-color: #FFF; color: #393837; margin: 0px; padding: 0px; font-family: 'Roboto', sans-serif; padding-bottom: 50px; }
-h1, h2, h3, h4, h5 { font-family: 'Roboto', 'Segoe UI', 'Helvetica', 'Open Sans', 'Tahoma', sans-serif; font-weight: lighter; font-size: 100px; margin: 20px; padding: 0px; }
+body { background-color: #FFF; color: #393837; margin: 0px; padding: 0px; font-family: 'Helvetica Neue', 'Roboto', 'Segoe UI', 'Helvetica', 'Open Sans', 'Tahoma', sans-serif; font-weight: 200; padding-bottom: 50px; }
+h1, h2, h3, h4, h5 { font-family: 'Helvetica Neue', 'Roboto', 'Segoe UI', 'Helvetica', 'Open Sans', 'Tahoma', sans-serif; font-weight: 200; font-size: 100px; margin: 20px; padding: 0px; }
 h1 { font-family: 'Text Me One', sans-serif; padding-bottom: 30px; line-height: 100px; }
 h2 { font-size: 35px; line-height: 47px; }
 h3 { font-size: 43px; text-transform: uppercase; }
@@ -33,7 +33,7 @@ a:focus { transition: all 0.3s }
 .arrow-right:before { border: solid transparent; content: " "; height: 0; width: 0; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-left-color: #ffffff; border-width: 16px; float: right; left: 50px; position: relative; margin-top: 28px; }
 
 .head-top { background: #4962DD; background: linear-gradient(45deg, #6B14D3 0, #7A26E2 25%, #4962DD 60%); color: white; text-align: center; padding: 70px 10px; min-height: 556px; }
-.head-top h1 { display: inline-block; border: 5px solid white; height: 97px; padding: 10px; line-height: 100px; }
+.head-top h1 { display: inline-block; border: 5px solid white; width: 326px; height: 97px; padding: 10px; line-height: 100px; }
 .head-top a { color: white; }
 .head-top .download { margin-top: 44px; line-height: 44px; }
 .head-top .download-windows, .head-top .download-mac, .head-top .download-oldmac, .head-top .download-linux { display: none }
@@ -84,6 +84,9 @@ a:focus { transition: all 0.3s }
 /* Medium screen */
 @media only screen and (max-width: 1200px) {
 	.block li { font-size: 20px }
+	.block-foot, .block-follow { width: 100%; }
+	.block-follow svg { height: 50px }
+	.block-follow { min-height: 50px }
 }
 
 /* Small screen */
@@ -95,10 +98,12 @@ a:focus { transition: all 0.3s }
 
 /* Mini screen */
 @media only screen and (max-width: 470px) {
-	.head-top h1 { font-size: 60px; height: 67px; line-height: 70px; }
+	.head-top h1 { font-size: 60px; height: 67px; line-height: 70px; width: 196px; }
 	h2 { font-size: 20px; font-size: 16px; line-height: 30px; }
 	h3 { font-size: 35px; }
 	.block-password { background: #999; }
 	.block-fast { background: #9B59B6 url('../img/fast.png') 10% -30% no-repeat; }
 	.block-opensource .button { font-size: 13px; }
+	.block-follow svg { width: 25px; height: 25px }
+	.block-follow { min-height: 25px }
 }
