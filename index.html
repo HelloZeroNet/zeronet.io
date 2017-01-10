@@ -15,6 +15,7 @@ foreach ($locale_array as $locale) {
 $locale = preg_replace("#;.*#", "", $locale);
 $lang_file = "languages/$locale.json";
 if (is_file($lang_file)) break; 
+  if (substr($locale, 0, 2) == "en" or is_file($lang_file)) break;
 }
 if (!$locale || !is_file($lang_file)) $locale = "en";
 $lang = preg_replace("#-.*#", "", $locale);
