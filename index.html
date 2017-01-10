@@ -35,7 +35,7 @@ if ($lang != "en") ob_start();
  <meta name="viewport" content="width=device-width,initial-scale=1">
 
  <!-- Inline css... Thanks Google! -->
- <style>
+ <style id='style'>
  <? include("media/main.css"); ?>
 
  h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden } /* Avoid font flicker */
@@ -151,6 +151,14 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1 && navigator.ap
       webkitRequestAnimationFrame || msRequestAnimationFrame;
   if (raf) raf(cb);
   else window.addEventListener('load', cb);
+
+  setTimeout(function() {
+    document.getElementById("style").innerHTML += "\nh2 { visibility: visible !important }"
+  }, 800)
+
+  setTimeout(function() {
+    document.getElementById("style").innerHTML += "\nh3,h4,h5,h6,a,li,ul,small,span { visibility: visible !important }"
+  }, 4000)
 </script>
 <!-- EOF Load fonts -->
 
