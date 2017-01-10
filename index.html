@@ -9,10 +9,14 @@ if ($_GET["url"])
 else
   $locale = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
 
-preg_match("#^([A-Za-z-]+)#", $locale, $matches);
-$locale = strtolower($matches[1]);
-if (!$locale) $locale = "en";
-if (!strpos($locale, "-")) $locale = $locale . "-" . $locale;
+$locale = strtolower($locale);
+$locale_array = explode(",",$locale);
+foreach ($locale_array as $locale) {
+$locale = preg_replace("#;.*#", "", $locale);
+$lang_file = "languages/$locale.json";
+if (is_file($lang_file)) break; 
+}
+if (!$locale || !is_file($lang_file)) $locale = "en";
 $lang = preg_replace("#-.*#", "", $locale);
 if ($lang != "en") ob_start();
 ?>
@@ -301,15 +305,9 @@ addAnimationDelay()
 if ($lang != "en") {
   $body = ob_get_contents();
   ob_clean();
-  if ($locale == "$lang-$lang")
-    $lang_file = "languages/$lang.json";
-  else
-    $lang_file = "languages/$locale.json";
-  if (is_file($lang_file)) {
-    $translates = json_decode(file_get_contents($lang_file));
-    foreach ($translates as $original => $translated) {
-      $body = str_replace(">$original<", ">$translated<", $body);
-    }
+  $translates = json_decode(file_get_contents($lang_file));
+  foreach ($translates as $original => $translated) {
+    $body = str_replace(">$original<", ">$translated<", $body);
   }
   print $body;
 }
