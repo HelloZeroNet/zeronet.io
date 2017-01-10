@@ -8,17 +8,17 @@ if ($_GET["url"])
   $locale = $_GET["url"];
 else
   $locale = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
-
 $locale = strtolower($locale);
 $locale_array = explode(",",$locale);
 foreach ($locale_array as $locale) {
-$locale = preg_replace("#;.*#", "", $locale);
-$lang_file = "languages/$locale.json";
-if (is_file($lang_file)) break; 
+  $locale = preg_replace("#;.*#", "", $locale);
+  $locale = preg_replace("#[^a-z-]#", "", $locale);
+  $lang_file = "languages/$locale.json";
   if (substr($locale, 0, 2) == "en" or is_file($lang_file)) break;
 }
 if (!$locale || !is_file($lang_file)) $locale = "en";
 $lang = preg_replace("#-.*#", "", $locale);
+
 if ($lang != "en") ob_start();
 ?>
 <!DOCTYPE html>
