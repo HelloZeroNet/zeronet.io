@@ -8,16 +8,17 @@ if ($_GET["url"])
   $locale = $_GET["url"];
 else
   $locale = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
-
 $locale = strtolower($locale);
 $locale_array = explode(",",$locale);
 foreach ($locale_array as $locale) {
-$locale = preg_replace("#;.*#", "", $locale);
-$lang_file = "languages/$locale.json";
-if (is_file($lang_file)) break; 
+  $locale = preg_replace("#;.*#", "", $locale);
+  $locale = preg_replace("#[^a-z-]#", "", $locale);
+  $lang_file = "languages/$locale.json";
+  if (substr($locale, 0, 2) == "en" or is_file($lang_file)) break;
 }
 if (!$locale || !is_file($lang_file)) $locale = "en";
 $lang = preg_replace("#-.*#", "", $locale);
+
 if ($lang != "en") ob_start();
 ?>
 <!DOCTYPE html>
@@ -34,12 +35,23 @@ if ($lang != "en") ob_start();
  <meta name="viewport" content="width=device-width,initial-scale=1">
 
  <!-- Inline css... Thanks Google! -->
- <style>
+ <style id='style'>
  <? include("media/main.css"); ?>
 
- h1,h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden } /* Avoid font flicker */
+ h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden } /* Avoid font flicker */
+
+ @font-face {
+  font-family: 'Text Me One';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Text Me One'),
+    url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAAnEABMAAAAAE8QAAAlcAAEAgwAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4bbhyBDAZgAIMiCDIJhGURCAqJNIhfATYCJANoCzYABCAFiTgHgWQMgjE/d2ViZgYb6BHInpo8qRhCKMliQs9g/zcc1yKA/Ourul9/wGuFJM7K7Zk5MVxmJ4XK5Iu1toeYbnsV40U8NMRCgRA5UqQyhMpPv2m9CZb4QJIalaHUoSa2S9ZU2BOXR85cc/Znggw5cMo8hQTb/r9rpc2f2xxgCVxfI2T9vgpDrspd/mLm7xxwJkcMtiQcy6q+zm4BwVa6CmP6kE2xXzn/XqmIGK98IwT4cMk9qwC49OQ7czxzYy2RxqlEMxBBRxtCCoNZ3rzcVF6L02cOTcHRrk1LVwPuX7hlHTAt9vrfojZDw7bDmzfAGk5VkASUepUrUq4RIa52vJjo3ENHl6yj4lq8qFwvi4J6hGp0ROLfGGQlB0+Nt4SzFElFlfwrwL3i5vGyUlxmfOK1vDQZcC682+EzmzaD1nb/f8Sd/5UASh6Mo71aP0H4Lb6DXhZIg7NYp7zY/Txw1yy5Vqi9wb9WqUovbnFFbT0Dn728rJTNz/3nf2iS4Rv+/+3/uc9trnGxC11g9ef+b7777IEPM8gWN64JxaDOCzzn9kNNvjzj1UWuX3FKyf+ulDLl4BRU+ISk6F6blVnFpeXkFRSVWCQw/HMlK27wXXzEXsYiGWFYDhrm4ZDXwoFRDKHvpBQUDas5Fn7c3hh7G0m4JKUYick+RL9RjC5zcMLq1mOa83jOXJnCsM1radgWK0beTOeh6dou6xP1cky1eaL17+XPMVXXUDAs7BnFjuaOJZa3YAbmrC1G0XSyyQnivuzEnKSKkEeDZDo5+ylt8d2mIrP60mL0mGxvAepp97UYcrn9OkM+bwBh8Wp76f1CTAbWqZoWU+0d31IsLOZlVkdVqqE1+Ez2ZlWifniLUpSMORZjvXrPwlXMYksWpUcbO0Aqg4TMZr12T1a3ma0XZes5F2JbJOuGey62FbekPQVJxja/m9JbU9m7dhPIFF39DGEFL9JMukKmzt4t2FNn1uCkqiGJrbYr07tft3Vm98/thcbBCJduMdJTAIotlx6T9RSw7WVUD9YsqAUGOmwy5vbxJvMcWKLbEvYas5rUx6VPjJh3weTQNrWDDL5BIW+BhkXTUfCYiOqLGELfqWrASDQGj2jzW3HoxbCtI04YgeHIFmPq0nQaHTVRonWE+ZOKgRD+pwa0ByXjPL57PgSh8bo1Yg2Eb1acXDwKt/E88PEh8RmsyO+P0gjlfbtrdm4NePwzrzjoOzU6sdJz8Dlf8uhn4My1D9slu9wHnvZ67Wd3E5LR8im4dhiJRHeAvhmMXo7a5OA0Yne1/ezsxYOfnP4OwLXl/i2bGEYD83t8bL8NC9d+dOo9kl/Thx+e9q5V4cK1G5qpoMyof6To4Ce+OzrzlDurl4p0fERy9/CfK3df2eT0R+8cu1i5fVY/lnjC7i7LK3rNfv0XnRe9clHJygJY7j01VPu5fcag92u6W4kqKygs9y/8dsbLxcc/+4zeSpPpiiHu143h9SOzZvTl3u1a2lDy9mW59GhY2f+UgYkhFRZGnHfpX7XHas4YLlzz9J2NjztX7Y5OPYjyMJla4TvWDc/c83fWnuGCrfMxv2fv6FJLpvJbkMs/uL32WWdJioIln260/iDOgo+t73v+ztwzXJKKnfOJzXbByZsevvm6fHeQWnSrvW1+UjlGQ/SY6Qq/5C8xlAfFQ5Z7zm0k59h+qiZXzs93HnmCLD+0aU4VXR6ihXOPu+4yPXqCXkQlfMTx1QAMBOQDjBwfl/jknyvyovBxJ41zucjsmCW0FiQx5Z8ekd6Y73aAoTml0kSKT/BVEuwqRfg4nyQnMIk6EjEcKiecTOeOSbBfj1w9SjKGF59KFVTqgczSZMWRovX1ZeXw3QwwNB/wJgq8K3lUhi8Rcr1KHY0YQFYlpWQpvTPkuNeTVj/uQF5BKYM1KDXd/Yj0Aq9xV9uV5jHiPIHCPN2JV2RvAR8wHNmDQ0NYpaYGi1IpmzZUKpzcnXaxIp6Zmy71JlDoGOVMzUwdfxfP5RfkJNcDvlVeGeISuRZGOaSkVvAzP5MLHAkK86miSPanPODhvFAfTGV5k5pY0C0EgTBtR2JJATvoU5hXCylSs+Wll5GKJM4VVDoBKZErqyA4LnWnJ5xADylLcQspsm3qWZbGFPqc7284xZGEUy365shKPF3NbrAGIKvUNsQRGFcgBIYGTGhDX+GisJqMZYkjsAl+GyW8oWfv2b/MDzX96u5xB3O/G+/l/6e5Re8BpY8ZO3zrNPybR3Jxae5XxrH2+BPjb4nPEp8h7gTpklpaRZP96CW54Z446SGi3vKS+CNSWNwj/EQ4Afw5m/wWYSiAZYByJ/Fo0k74sKP46KPmY84+eFadH4tC8gAXwEYHzVEQRFTtW5GZ7F8kA0KJKNIepkSxPmGdKLE0nCVKdYYvoYz/J6oCc6WJauOyhuZzTjIMcR43OyIu2MnuPn7RRvbkL/sg0569zKCtY6qnqqxiAFHl0SA+Lt7iTZmQ3VBDVRbyKhroOTQ4qKGq6c7G1mnTKmtPVHmgi5pe36oGtnxkmmjYagx9ByqQv6/6Yd+ekaICdJi1tVgp90A13TZEEQSaSC7uUtxtQx6tCJGozOv8rF4N5g0vRw4zr5a3wiK06yEBhZmr/gA590U8bNzJrKwYBsOTseZF11X90GQhU8p+SWLrtfXUobeV0nnZPFuz6LAqqEI8q+0pQGYGxuSzuGH2jryi1lkbWICGWjypx5oqdh0BNs4Wow7MQV3rzAzMBVsQZ6uR1TyUs1rKGV1fJit3vc25tihLaXR8GxqcW6rUV3VcxZmYvvy9oDqe6WPTmwb2n9LtX8bhYea0HxlRlFOqcfCqoACHgcioKH+leQshLhk5Ae6ihk98BTrivwnKnjcaoAfbZ8450l1DoF4/r/FBd8V/K1Ay/qvtIETCER4yo6lY+YVEgkBEIhE38RAv8RE/CZAgCRFKZKKQsLh8/84NK8qXvSqkrQdXlkGsS6S3l6mKvRDwcl7BK3kVr+Y1vJbX8Xpfe2ZFj68613+9zvvJ/yk53byce2y1Q8gZa8ief41CpL9RhZGJpO1A7BrFb/Q3gK+MdSNndCHPuuPcldHYAiGLrwExS+gGKUvsAHeW1AqeLHcL8w55EMpSIXSUT5Hlbbb8BypSBAKZ/t4qgtWlgVBqsLrO4XpORkBXhbZBzqHNoOTIDMJ+CkRywgpEsyNSnBhGDCBWbzx2CA==) format('woff2'),
+    url('font/TextMeOne-Regular.woff') format('woff');
+ }
+
  </style>
- <link rel="subresource" href="media/fonts.css">
+ <link rel="preload" href="media/fonts.css" as="style">
 
 </head>
 <body>
@@ -50,12 +62,14 @@ if ($lang != "en") ob_start();
   <?=$lang?>
  </a>
  <div id="language_menu">
-  <a href="/zh">Chinese</a>
+  <a href="/zh">Chinese (Simplified)</a>
+  <a href="/zh-tw">Chinese (Traditional)</a>
   <a href="/en">English</a>
   <a href="/de">German</a>
   <a href="/fr">French</a>
   <a href="/hu">Hungarian</a>
   <a href="/it">Italian</a>
+  <a href="/pt">Portuguese</a>
  </div>
 </div>
 
@@ -139,6 +153,14 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1 && navigator.ap
       webkitRequestAnimationFrame || msRequestAnimationFrame;
   if (raf) raf(cb);
   else window.addEventListener('load', cb);
+
+  setTimeout(function() {
+    document.getElementById("style").innerHTML += "\nh2 { visibility: visible !important }"
+  }, 800)
+
+  setTimeout(function() {
+    document.getElementById("style").innerHTML += "\nh3,h4,h5,h6,a,li,ul,small,span { visibility: visible !important }"
+  }, 4000)
 </script>
 <!-- EOF Load fonts -->
 
