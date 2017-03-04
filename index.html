@@ -64,13 +64,13 @@ if ($lang != "en") ob_start();
  <div id="language_menu">
   <a href="/zh">Chinese (Simplified)</a>
   <a href="/zh-tw">Chinese (Traditional)</a>
+  <a href="/nl">Dutch</a>
   <a href="/en">English</a>
   <a href="/de">German</a>
   <a href="/fr">French</a>
   <a href="/hu">Hungarian</a>
   <a href="/it">Italian</a>
   <a href="/pt">Portuguese</a>
-  <a href="/nl">Dutch</a>
  </div>
 </div>
 
@@ -85,6 +85,16 @@ else if (navigator.appVersion.toLowerCase().indexOf("mac os x")!=-1) {
 }
 else if (navigator.appVersion.toLowerCase().indexOf("android")!=-1) document.body.className = "platform-android";
 else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.className = "platform-linux";
+
+function download(platform) {
+  var req = new XMLHttpRequest();
+  req.onload = function (res) {
+    window.location = JSON.parse(req.responseText).assets[0].browser_download_url;
+  }
+  req.open("GET", "https://api.github.com/repos/HelloZeroNet/ZeroNet-kivy/releases/latest", true);
+  req.send();
+  return false;
+}
 </script>
 
 <!-- Top -->
@@ -126,7 +136,7 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
 
  <div class="download download-android">
   <div class="button-container">
-   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy/raw/master/dist/ZeroNet-0.2.3-debug.apk" class="button button-outline">Download Android package (experimental)</a><br>
+   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy/releases/latest" class="button button-outline" onclick="return window.download('android')">Download Android package (experimental)</a><br>
    <small>14.7MB &middot; <span>Install &middot; Launch ZeroNet</span></small>
   </div>
   <div class="button-container" style="margin: 0px 10px">
