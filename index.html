@@ -38,8 +38,8 @@ if ($lang != "en") ob_start();
  <style id='style'>
  <? include("media/main.css"); ?>
 
- h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden } /* Avoid font flicker */
-
+ h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden; } /* Avoid font flicker */
+ h1 { opacity: 0; transition: all 0.3s ease-in-out; }
  @font-face {
   font-family: 'Text Me One';
   font-style: normal;
@@ -177,6 +177,11 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
   setTimeout(function() {
     document.getElementById("style").innerHTML += "\nh3,h4,h5,h6,a,li,ul,small,span { visibility: visible !important }"
   }, 4000)
+
+  setTimeout(function() {
+    document.getElementsByTagName("h1")[0].style.opacity = 1
+    document.getElementsByTagName("h1")[0].style.transform = "none"
+  }, 100)
 </script>
 <!-- EOF Load fonts -->
 
@@ -292,7 +297,8 @@ addAnimationDelay()
 </script>
 <noscript>
 <style>
-.block { opacity: 1; transform: none }
+.block { opacity: 1; transform: none; }
+.h1 { opacity: 1; }
 </style>
 </noscript>
 
