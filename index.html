@@ -77,7 +77,7 @@ if ($lang != "en") ob_start();
 if (navigator.appVersion.toLowerCase().indexOf("win")!=-1) document.body.className = "platform-windows";
 else if (navigator.appVersion.toLowerCase().indexOf("mac os x")!=-1) {
   osx_version = parseFloat(navigator.appVersion.toLowerCase().match(/os x ([0-9]+_[0-9]+)/)[1].replace("_", ""))
-  if (osx_version >= 2011)
+  if (osx_version >= 11)
     document.body.className = "platform-mac";
   else
     document.body.className = "platform-oldmac";
@@ -112,32 +112,6 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
   </div>
  </div>
 
- <div class="download download-oldmac">
-  <div class="button-container">
-   <a href="https://github.com/HelloZeroNet/ZeroBundle/raw/master/dist/ZeroBundle-mac-osx.zip" class="button button-outline">Download for macOS</a><br>
-   <small>9.5MB &middot; <span>Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.</span></small>
-  </div>
-  <div class="button-container" style="margin: 0px 10px">
-   <span style="margin: 0px 10px">or</span>
-   <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join">Other platforms and source code</a>
-  </div>
- </div>
-
- <div class="download download-android">
-  <div class="button-container">
-   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy/raw/master/dist/ZeroNet-0.2.3-debug.apk" class="button button-outline">Download android package(experimental)</a><br>
-   <small>14.7MB &middot; <span>Install &middot; Launch ZeroNet</span></small>
-  </div>
-  <div class="button-container" style="margin: 0px 10px">
-   <span style="margin: 0px 10px">or</span>
-   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy" class="button button-outline">View and help development Android version</a><br>
-  </div>
-  <div class="button-container" style="margin: 0px 10px">
-   <span style="margin: 0px 10px">or</span>
-   <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join">Other platforms and source code</a>
-  </div>
- </div>
-
  <div class="download download-linux">
   <div class="button-container">
    <a href="https://github.com/HelloZeroNet/ZeroBundle/raw/master/dist/ZeroBundle-linux64.tar.gz" class="button button-outline">Download for Linux 64bit</a><br>
@@ -149,12 +123,27 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
   </div>
  </div>
 
+ <div class="download download-android">
+  <div class="button-container">
+   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy/raw/master/dist/ZeroNet-0.2.3-debug.apk" class="button button-outline">Download Android package (experimental)</a><br>
+   <small>14.7MB &middot; <span>Install &middot; Launch ZeroNet</span></small>
+  </div>
+  <div class="button-container" style="margin: 0px 10px">
+   <span style="margin: 0px 10px">or</span>
+   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy">View and help development Android version</a><br>
+  </div>
+  <div class="button-container" style="margin: 0px 10px">
+   <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join">Other platforms and source code</a>
+  </div>
+ </div>
+
  <div class="download download-other">
   <div class="button-container">
    <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join" class="button button-outline">Install instructions</a><br>
    <small>Windows, Linux, Mac supported</small>
   </div>
  </div>
+
 </div>
 
 <!-- Load fonts -->
