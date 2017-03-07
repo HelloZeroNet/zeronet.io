@@ -33,15 +33,16 @@ a:focus { transition: all 0.3s }
 .arrow-right:before { border: solid transparent; content: " "; height: 0; width: 0; pointer-events: none; border-color: rgba(255, 255, 255, 0); border-left-color: #ffffff; border-width: 16px; float: right; left: 50px; position: relative; margin-top: 28px; }
 
 .head-top { background: #4962DD; background: linear-gradient(45deg, #6B14D3 0, #7A26E2 25%, #4962DD 60%); color: white; text-align: center; padding: 70px 10px; min-height: 556px; }
-.head-top h1 { display: inline-block; border: 5px solid white; width: 326px; height: 97px; padding: 10px; line-height: 100px; }
+.head-top h1 { display: inline-block; border: 5px solid white; height: 97px; padding: 10px; line-height: 100px; }
 .head-top a { color: white; }
 .head-top .download { margin-top: 44px; line-height: 44px; }
-.head-top .download-windows, .head-top .download-mac, .head-top .download-oldmac, .head-top .download-linux { display: none }
+.head-top .download-windows, .head-top .download-mac, .head-top .download-oldmac, .head-top .download-linux, .head-top .download-android { display: none }
 .platform-windows .head-top .download-windows { display: block }
 .platform-mac .head-top .download-mac { display: block }
 .platform-oldmac .head-top .download-oldmac { display: block }
 .platform-linux .head-top .download-linux { display: block }
-.platform-windows .head-top .download-other, .platform-mac .head-top .download-other, .platform-oldmac .head-top .download-other, .platform-linux .head-top .download-other { display: none }
+.platform-android .head-top .download-android { display: block }
+.platform-windows .head-top .download-other, .platform-mac .head-top .download-other, .platform-oldmac .head-top .download-other, .platform-linux .head-top .download-other, .platform-android .head-top .download-other { display: none }
 
 /*.block-p2p { background-color: #E6E9ED; color: #555; }*/
 .block-p2p { background-color: #5368C3; color: #FFF; background: #2D2D2D url('../img/p2p-3.png') bottom left no-repeat }
@@ -106,4 +107,5 @@ a:focus { transition: all 0.3s }
 	.block-opensource .button { font-size: 13px; }
 	.block-follow svg { width: 25px; height: 25px }
 	.block-follow { min-height: 25px }
+	.download-android .button-outline { font-size: 15px }
 }

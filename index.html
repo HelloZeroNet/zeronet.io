@@ -38,8 +38,8 @@ if ($lang != "en") ob_start();
  <style id='style'>
  <? include("media/main.css"); ?>
 
- h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden } /* Avoid font flicker */
-
+ h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden; } /* Avoid font flicker */
+ h1 { opacity: 0; transition: all 0.3s ease-in-out; }
  @font-face {
   font-family: 'Text Me One';
   font-style: normal;
@@ -64,6 +64,7 @@ if ($lang != "en") ob_start();
  <div id="language_menu">
   <a href="/zh">Chinese (Simplified)</a>
   <a href="/zh-tw">Chinese (Traditional)</a>
+  <a href="/nl">Dutch</a>
   <a href="/en">English</a>
   <a href="/de">German</a>
   <a href="/fr">French</a>
@@ -77,13 +78,23 @@ if ($lang != "en") ob_start();
 if (navigator.appVersion.toLowerCase().indexOf("win")!=-1) document.body.className = "platform-windows";
 else if (navigator.appVersion.toLowerCase().indexOf("mac os x")!=-1) {
   osx_version = parseFloat(navigator.appVersion.toLowerCase().match(/os x ([0-9]+_[0-9]+)/)[1].replace("_", ""))
-  if (osx_version >= 2011)
+  if (osx_version >= 11)
     document.body.className = "platform-mac";
   else
     document.body.className = "platform-oldmac";
 }
 else if (navigator.appVersion.toLowerCase().indexOf("android")!=-1) document.body.className = "platform-android";
 else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.className = "platform-linux";
+
+function download(platform) {
+  var req = new XMLHttpRequest();
+  req.onload = function (res) {
+    window.location = JSON.parse(req.responseText).assets[0].browser_download_url;
+  }
+  req.open("GET", "https://api.github.com/repos/HelloZeroNet/ZeroNet-kivy/releases/latest", true);
+  req.send();
+  return false;
+}
 </script>
 
 <!-- Top -->
@@ -92,8 +103,8 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
  <h2>Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network</h2>
  <div class="download download-windows">
   <div class="button-container">
-   <a href="https://github.com/HelloZeroNet/ZeroBundle/raw/master/dist/ZeroBundle-win.zip" class="button button-outline">Download for Windows</a><br>
-   <small>10MB &middot; <span>Unpack &middot; Run zeronet.cmd</span></small>
+   <a href="https://github.com/HelloZeroNet/ZeroNet-win/archive/dist/ZeroNet-win.zip" class="button button-outline">Download for Windows</a><br>
+   <small>9.6MB &middot; <span>Unpack &middot; Run ZeroNet.exe</span></small>
   </div>
   <div class="button-container" style="margin: 0px 10px">
    <span style="margin: 0px 10px">or</span>
@@ -103,34 +114,8 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
 
  <div class="download download-mac">
   <div class="button-container">
-   <a href="https://github.com/HelloZeroNet/ZeroBundle/raw/master/dist/ZeroBundle-mac-osx.zip" class="button button-outline">Download for macOS</a><br>
-   <small>9.5MB &middot; <span>Unpack &middot; Run ZeroNet</span></small>
-  </div>
-  <div class="button-container" style="margin: 0px 10px">
-   <span style="margin: 0px 10px">or</span>
-   <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join">Other platforms and source code</a>
-  </div>
- </div>
-
- <div class="download download-oldmac">
-  <div class="button-container">
-   <a href="https://github.com/HelloZeroNet/ZeroBundle/raw/master/dist/ZeroBundle-mac-osx.zip" class="button button-outline">Download for macOS</a><br>
-   <small>9.5MB &middot; <span>Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.</span></small>
-  </div>
-  <div class="button-container" style="margin: 0px 10px">
-   <span style="margin: 0px 10px">or</span>
-   <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join">Other platforms and source code</a>
-  </div>
- </div>
-
- <div class="download download-android">
-  <div class="button-container">
-   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy/raw/master/dist/ZeroNet-0.2.3-debug.apk" class="button button-outline">Download android package(experimental)</a><br>
-   <small>14.7MB &middot; <span>Install &middot; Launch ZeroNet</span></small>
-  </div>
-  <div class="button-container" style="margin: 0px 10px">
-   <span style="margin: 0px 10px">or</span>
-   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy" class="button button-outline">View and help development Android version</a><br>
+   <a href="https://github.com/HelloZeroNet/ZeroNet-mac/archive/dist/ZeroNet-mac.zip" class="button button-outline">Download for macOS</a><br>
+   <small>8.8MB &middot; <span>Download &middot; Run ZeroNet.app</span></small>
   </div>
   <div class="button-container" style="margin: 0px 10px">
    <span style="margin: 0px 10px">or</span>
@@ -149,12 +134,27 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
   </div>
  </div>
 
+ <div class="download download-android">
+  <div class="button-container">
+   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy/releases/latest" class="button button-outline" onclick="return window.download('android')">Download Android package (experimental)</a><br>
+   <small>14.7MB &middot; <span>Install &middot; Launch ZeroNet</span></small>
+  </div>
+  <div class="button-container" style="margin: 0px 10px">
+   <span style="margin: 0px 10px">or</span>
+   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy">View and help development Android version</a><br>
+  </div>
+  <div class="button-container" style="margin: 0px 10px">
+   <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join">Other platforms and source code</a>
+  </div>
+ </div>
+
  <div class="download download-other">
   <div class="button-container">
    <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join" class="button button-outline">Install instructions</a><br>
    <small>Windows, Linux, Mac supported</small>
   </div>
  </div>
+
 </div>
 
 <!-- Load fonts -->
@@ -177,6 +177,11 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
   setTimeout(function() {
     document.getElementById("style").innerHTML += "\nh3,h4,h5,h6,a,li,ul,small,span { visibility: visible !important }"
   }, 4000)
+
+  setTimeout(function() {
+    document.getElementsByTagName("h1")[0].style.opacity = 1
+    document.getElementsByTagName("h1")[0].style.transform = "none"
+  }, 100)
 </script>
 <!-- EOF Load fonts -->
 
@@ -292,7 +297,8 @@ addAnimationDelay()
 </script>
 <noscript>
 <style>
-.block { opacity: 1; transform: none }
+.block { opacity: 1; transform: none; }
+.h1 { opacity: 1; }
 </style>
 </noscript>
 

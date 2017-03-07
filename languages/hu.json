@@ -3,7 +3,7 @@
 	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "Nyílt, szabad és cenzúrázatlan weboldalak,<br> Bitcoin kriptográfiát és a BitTorrent hálózatot használva",
 
 	"Download for Windows": "Letöltés Windows-ra",
-	"Unpack &middot; Run zeronet.cmd": "Tömörítsd ki &middot; Futtasd a zeronet.cmd fájlt",
+	"Unpack &middot; Run ZeroNet.exe": "Tömörítsd ki &middot; Futtasd a ZeroNet.exe fájlt",
 	"or": "vagy",
 	"Other platforms and source code": "Más platformok és a forráskód",
 	"Download for macOS": "Letöltés macOS-re",
@@ -17,7 +17,7 @@
 	"Your content distributed directly to other visitors without any central server.": "A tartalmak közvetlenül a látogatók között cserélődnek, központi szerver nélkül.",
 
 	"Uncensored": "Cenzúrázhatatlan",
-	"It's nowhere because it's everywhere!": "Sehol nincs, mert mindenhol ott van!",
+	"It's nowhere because it's everywhere!": "Sehova nem kötődik, mégis mindenhol jelen van!",
 	"No hosting costs": "Költségek nélkül",
 	"Sites are served by visitors.": "Az oldalak a látogatóktól érhetőek el.",
 	"Always accessible": "Mindig elérhető",
