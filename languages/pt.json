@@ -24,20 +24,20 @@
 	"No single point of failure.": "Sem possibilidades de falha",
 
 	"Simple": "Simples",
-	"No configuration needed:": "Não necessita de configuração",
+	"No configuration needed:": "Não necessita de configuração:",
 	"Download, unpack and start using it.": "Baixe, extraia e comece a usar.",
 
 	".bit domains": "domínios .bit",
 	"Decentralized domains using Namecoin cryptocurrency.": "Domínios descentralizados utilizando cryptomoeda Namecoin.",
 
 	"No passwords": "Sem passwords",
-	"Your account is protected by same cryptography as your Bitcoin wallet.": "A sua conta é protegida pela mesma criptografia utilizada na sua carteira Bitcoin",
+	"Your account is protected by same cryptography as your Bitcoin wallet.": "A sua conta é protegida pela mesma criptografia utilizada na sua carteira Bitcoin.",
 
 	"Fast": "Ágil",
 	"Page response time is not limited by your connection speed.": "O tempo de resposta da página não é limitada pela velocidade da conexão.",
 
 	"Dynamic content": "Conteúdo Dinâmico",
-	"Real-time updated, multi-user websites.": "Websites para multi-usuários, actualizados em tempo-real",
+	"Real-time updated, multi-user websites.": "Websites para multi-usuários, actualizados em tempo-real.",
 
 	"How does it work?": "Como funciona?",
 
@@ -49,7 +49,7 @@
 	"Read the FAQ": "Leia o FAQ",
 
 	"Offline": "Offline",
-	"Browse the sites you&#39;re seeding even if your internet connection is down.": "Navegue pelos ssites que você está a enviar mesmo que a internet esteja fraca.",
+	"Browse the sites you&#39;re seeding even if your internet connection is down.": "Navegue pelos sites que você está a enviar mesmo que a internet esteja fraca.",
 
 	"Open Source": "Código Aberto",
 	"Developed by the community for the community.": "Desenvolvido pela comunidade para a comunidade.",
