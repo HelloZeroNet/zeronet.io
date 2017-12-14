@@ -11,7 +11,7 @@
 	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "Распакуйте &middot; Откройте программу Terminal &middot; Перетащите на неё ZeroNet и нажмите Enter.",
 	"Download for Linux 64bit": "Скачать для Linux 64bit",
 	"Install instructions": "Инструкции по установке",
-	"Windows, Linux, Mac supported": "Windows, Linux, Mac поддерживаются",
+	"Windows, Linux, Mac supported": "Поддержка Windows, Linux, Mac",
 
 	"Peer-to-Peer": "Пиринговая",
 	"Your content distributed directly to other visitors without any central server.": "Ваше содержимое распространяется напрямую другим посетителям без центрального сервера.",
@@ -21,16 +21,16 @@
 	"No hosting costs": "Бесплатный хостинг",
 	"Sites are served by visitors.": "Сайты хранятся посетителями.",
 	"Always accessible": "Всегда доступна",
-	"No single point of failure.": "Нет Ахиллесовой пяты.",
+	"No single point of failure.": "Нет слабого звена.",
 
 	"Simple": "Простая",
-	"No configuration needed:": "Не нужна настройка:",
+	"No configuration needed:": "Без конфигурации сети:",
 	"Download, unpack and start using it.": "Скачайте, распакуйте и начните пользоваться.",
 
 	".bit domains": ".bit домены",
 	"Decentralized domains using Namecoin cryptocurrency.": "Децентрализрванные домены, использующие криптовалюту Namecoin.",
 
-	"No passwords": "Нет паролей",
+	"No passwords": "Без паролей",
 	"Your account is protected by the same cryptography as your Bitcoin wallet.": "Ваш аккаунт защищён той же криптографией, как и Ваш кошелёк Bitcoin.",
 
 	"Fast": "Быстрая",
@@ -55,7 +55,7 @@
 	"Developed by the community for the community.": "Разрабатывается сообществом для сообщества.",
 	"Please donate to keep this project alive": "Пожертвуйте, чтобы поддержать проект.",
 
-	"We believe in": "Мы верим в",
+	"We believe in": "Наша вера в",
 	"open, free, and uncensored": "открытую, бесплатную сеть",
 	"network and communication.": "и связь без цензуры."
 
