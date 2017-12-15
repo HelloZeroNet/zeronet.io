@@ -1,0 +1,62 @@
+{
+	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "ZeroNet: Децентрализованные веб-сайты с криптографией Bitcoin и сетью BitTorrent",
+	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "Открытые, бесплатные сайты без цензуры,<br>использующие криптографию Bitcoin и сеть BitTorrent",
+
+	"Download for Windows": "Скачать для Windows",
+	"Unpack &middot; Run ZeroNet.exe": "Распакуйте &middot; Запустите ZeroNet.exe",
+	"or": "или",
+	"Other platforms and source code": "Другие платформы и исходный код",
+	"Download for macOS": "Скачать для macOS",
+	"Unpack &middot; Run ZeroNet": "Распакуйте &middot; Запустите ZeroNet",
+	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "Распакуйте &middot; Откройте программу Terminal &middot; Перетащите на неё ZeroNet и нажмите Enter.",
+	"Download for Linux 64bit": "Скачать для Linux 64bit",
+	"Install instructions": "Инструкции по установке",
+	"Windows, Linux, Mac supported": "Поддержка Windows, Linux, Mac",
+
+	"Peer-to-Peer": "Пиринговая",
+	"Your content distributed directly to other visitors without any central server.": "Ваше содержимое распространяется напрямую другим посетителям без центрального сервера.",
+
+	"Uncensored": "Без цензуры",
+	"It's nowhere because it's everywhere!": "Данных нет нигде, потому что они везде!",
+	"No hosting costs": "Бесплатный хостинг",
+	"Sites are served by visitors.": "Сайты хранятся посетителями.",
+	"Always accessible": "Всегда доступна",
+	"No single point of failure.": "Нет слабого звена.",
+
+	"Simple": "Простая",
+	"No configuration needed:": "Без конфигурации сети:",
+	"Download, unpack and start using it.": "Скачайте, распакуйте и начните пользоваться.",
+
+	".bit domains": ".bit домены",
+	"Decentralized domains using Namecoin cryptocurrency.": "Децентрализрванные домены, использующие криптовалюту Namecoin.",
+
+	"No passwords": "Без паролей",
+	"Your account is protected by the same cryptography as your Bitcoin wallet.": "Ваш аккаунт защищён той же криптографией, как и Ваш кошелёк Bitcoin.",
+
+	"Fast": "Быстрая",
+	"Page response time is not limited by your connection speed.": "Время загрузки страницы не зависит от скорости соединения.",
+
+	"Dynamic content": "Динамическое содержимое",
+	"Real-time updated, multi-user websites.": "Обновляющиеся в реальном времени, многопользовательские веб-сайты.",
+
+	"How does it work?": "Как это работает?",
+
+	"Works everywhere": "Работает везде",
+	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "Поддерживает любой современный браузер на Windows, Linux и Mac.",
+
+	"Anonymity": "Анонимная",
+	"You can easily hide your IP address using the Tor network.": "Вы можете легко скрыть свой IP адрес, используя Tor.",
+	"Read the FAQ": "Прочитайте ЧАВО",
+
+	"Offline": "Автономная",
+	"Browse the sites you&#39;re seeding even if your internet connection is down.": "Просматривайте сайты, которые вы скачали, даже если нет Интернета.",
+
+	"Open Source": "Открытая",
+	"Developed by the community for the community.": "Разрабатывается сообществом для сообщества.",
+	"Please donate to keep this project alive": "Пожертвуйте, чтобы поддержать проект.",
+
+	"We believe in": "Наша вера в",
+	"open, free, and uncensored": "открытую, бесплатную сеть",
+	"network and communication.": "и связь без цензуры."
+
+}
