@@ -92,9 +92,9 @@ else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.
 function download(platform) {
   var req = new XMLHttpRequest();
   req.onload = function (res) {
-    window.location = JSON.parse(req.responseText).assets[0].browser_download_url;
+    window.location = JSON.parse(req.responseText)[0].assets[0].browser_download_url;
   }
-  req.open("GET", "https://api.github.com/repos/HelloZeroNet/ZeroNet-kivy/releases/latest", true);
+  req.open("GET", "https://api.github.com/repos/HelloZeroNet/ZeroNet-kivy/releases", true);
   req.send();
   return false;
 }
