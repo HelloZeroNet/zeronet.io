@@ -1,6 +1,6 @@
 {
-	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "Web décentralisé utilisant le réseau BitTorrent et l'encryption Bitcoin",
-	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "Réseau ouvert, libre et incensurable,<br> utilisant sur la cryptographie Bitcoin et le réseau BitTorrent",
+	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "Web décentralisé utilisant le réseau BitTorrent et la cryptographie Bitcoin",
+	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "Réseau ouvert, libre et incensurable,<br> reposant sur la cryptographie Bitcoin et le réseau BitTorrent",
 
 	"Download for Windows": "Télécharger pour Windows",
 	"Unpack &middot; Run ZeroNet.exe": "Décompreser &middot; Exécuter ZeroNet.exe",
@@ -8,7 +8,7 @@
 	"Other platforms and source code": "Autres plate-formes et code source",
 	"Download for macOS": "Télécharger pour macOS",
 	"Unpack &middot; Run ZeroNet": "Décompresser &middot; Exécuter ZeroNet",
-	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "Décompresser &middot; Ouvrir Terminal &middot; Glisser déposer ZeroNet et appuyer sur Entrée",
+	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "Décompresser &middot; Ouvrir un terminal &middot; Glisser déposer ZeroNet et appuyer sur Entrée",
 	"Download for Linux 64bit": "Télécharger pour Linux 64bit",
 	"Install instructions": "Instructions d'installation",
 	"Windows, Linux, Mac supported": "Windows, Linux, Mac supportés",
@@ -25,7 +25,7 @@
 
 	"Simple": "Simple",
 	"No configuration needed:": "Aucune configuration nécessaire:",
-	"Download, unpack and start using it.": "Téléchargez, décompressez et utilisez.",
+	"Download, unpack and start using it.": "Téléchargez-le, décompressez-le et utilisez-le.",
 
 	".bit domains": "Domaines .bit",
 	"Decentralized domains using Namecoin cryptocurrency.": "Domaines décentralisés basés sur la crypto-monnaie Namecoin.",
@@ -34,12 +34,12 @@
 	"Your account is protected by the same cryptography as your Bitcoin wallet.": "Votre compte est protégé par la même cryptographie que votre portefeuille Bitcoin.",
 
 	"Fast": "Rapide",
-	"Page response time is not limited by your connection speed.": "La vitesse de réponse n'est pas limitée à votre vitesse de connection.",
+	"Page response time is not limited by your connection speed.": "La vitesse de réponse n'est pas limitée par votre vitesse de connection.",
 
 	"Dynamic content": "Contenu dynamique",
 	"Real-time updated, multi-user websites.": "Sites web multi-usagers mis à jour en temps réel.",
 
-	"How does it work?": "Comment ça fonctionne?",
+	"How does it work?": "Comment ça fonctionne ?",
 
 	"Works everywhere": "Universel",
 	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "Supporte tous les navigateurs modernes,<br>plate-formes Windows, Linux ou Mac.",
