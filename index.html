@@ -4,7 +4,7 @@ if (! isset($_SERVER['HTTPS']) or $_SERVER['HTTPS'] == 'off' ) {
   header("Location: $redirect_url");
   exit();
 }
-if ($_GET["url"])
+if (isset($_GET["url"]))
   $locale = $_GET["url"];
 else
   $locale = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
@@ -28,7 +28,7 @@ if ($lang != "en") ob_start();
  <title>ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network</title>
  <meta charset="utf-8">
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
- <!--<? /* We inline css using php include -->
+ <!--<?php /* We inline css using php include -->
  <link rel="stylesheet" href="media/main.css" />
  <!--*/ ?>-->
  <noscript><link rel="stylesheet" href="media/fonts.css" /></noscript>
@@ -36,7 +36,7 @@ if ($lang != "en") ob_start();
 
  <!-- Inline css... Thanks Google! -->
  <style id='style'>
- <? include("media/main.css"); ?>
+ <?php include("media/main.css"); ?>
 
  h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden; } /* Avoid font flicker */
  h1 { opacity: 0; transition: all 0.3s ease-in-out; }
@@ -59,7 +59,7 @@ if ($lang != "en") ob_start();
 <div id="language_changer">
  <a id="language" href="#" onclick="document.querySelector('#language_changer').classList.toggle('opened');return false">
   <svg class="icon icon-lang"><use xlink:href="#icon-lang"></use></svg>
-  <?=$locale?>
+  <?php echo $locale; ?>
  </a>
  <div id="language_menu">
   <a href="/zh">Chinese (Simplified)</a>
@@ -348,8 +348,8 @@ addAnimationDelay()
 </body>
 </html>
 
-<?
-if ($lang != "en") {
+<?php
+if ($lang != "en" && $lang != "") {
   $body = ob_get_contents();
   ob_clean();
   $translates = json_decode(file_get_contents($lang_file));
