@@ -79,13 +79,7 @@ if ($lang != "en") ob_start();
 
 <script>
 if (navigator.appVersion.toLowerCase().indexOf("win")!=-1) document.body.className = "platform-windows";
-else if (navigator.appVersion.toLowerCase().indexOf("mac os x")!=-1) {
-  osx_version = parseFloat(navigator.appVersion.toLowerCase().match(/os x ([0-9]+_[0-9]+)/)[1].replace("_", ""))
-  if (osx_version >= 11)
-    document.body.className = "platform-mac";
-  else
-    document.body.className = "platform-oldmac";
-}
+else if (navigator.appVersion.toLowerCase().indexOf("mac os x")!=-1) document.body.className = "platform-mac";
 else if (navigator.appVersion.toLowerCase().indexOf("android")!=-1) document.body.className = "platform-android";
 else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.className = "platform-linux";
 
@@ -117,8 +111,8 @@ function download(platform) {
 
  <div class="download download-mac">
   <div class="button-container">
-   <a href="https://github.com/HelloZeroNet/ZeroNet-mac/archive/dist/ZeroNet-mac.zip" class="button button-outline">Download for macOS</a><br>
-   <small>8.8MB &middot; <span>Download &middot; Run ZeroNet.app</span></small>
+   <a href="https://github.com/HelloZeroNet/ZeroNet-dist/archive/mac/ZeroNet-dist-mac.zip" class="button button-outline">Download for macOS</a><br>
+   <small>12.7MB &middot; <span>Download &middot; Run ZeroNet.app</span></small>
   </div>
   <div class="button-container" style="margin: 0px 10px">
    <span style="margin: 0px 10px">or</span>
