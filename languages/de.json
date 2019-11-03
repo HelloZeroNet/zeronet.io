@@ -1,20 +1,20 @@
 {
-	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "ZeroNet: Decentralisierte Webseiten mithilfe von Bitcoin kryptographie und dem BitTorrent Netzwerk",
-	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "Offene, freie und unzensierbare Webseiten,<br>mithilfe von Bitcoin kryptographie und BitTorrent Netzwerk",
+	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "ZeroNet: Dezentralisierte Webseiten, basiert auf Bitcoin-Kryptographie und dem BitTorrent-Netzwerk",
+	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "Offene, freie und unzensierbare Webseiten,<br>basiert auf Bitcoin-Kryptographie und dem BitTorrent-Netzwerk",
 
 	"Download for Windows": "Herunterladen für Windows",
 	"Unpack &middot; Run ZeroNet.exe": "Extrahieren &middot; ZeroNet.exe ausführen",
 	"or": "oder",
-	"Other platforms and source code": "Andere Platformen und Quell-Code",
+	"Other platforms and source code": "Andere Plattformen und Quelltext",
 	"Download for macOS": "Herunterladen für macOS",
 	"Unpack &middot; Run ZeroNet": "Extrahieren &middot; ZeroNet ausführen",
-	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "Extrahieren &middot; Terminal Programm öffnen &middot; ZeroNet hinein ziehen und Enter drücken.",
+	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "Extrahieren &middot; Terminal öffnen &middot; ZeroNet hinein ziehen und Enter drücken.",
 	"Download for Linux 64bit": "Herunterladen für Linux (64bit)",
-	"Install instructions": "Installations Anleitung",
+	"Install instructions": "Installationsanleitung",
 	"Windows, Linux, Mac supported": "Windows, Linux, Mac unterstüzt",
 
 	"Peer-to-Peer": "Peer-zu-Peer",
-	"Your content distributed directly to other visitors without any central server.": "Deine Inhalte werden direkt zu anderen Besuchern verteilt ohne einen zentralen Server.",
+	"Your content distributed directly to other visitors without any central server.": "Deine Inhalte werden ohne einen zentralen Server direkt zu anderen Besuchern verteilt.",
 
 	"Uncensored": "Unzensiert",
 	"It's nowhere because it's everywhere!": "Es ist nirgendwo, weil es überall ist!",
@@ -24,39 +24,39 @@
 	"No single point of failure.": "Kein Punkt des Versagens",
 
 	"Simple": "Einfach",
-	"No configuration needed:": "Keine konfiguration benötigt:",
-	"Download, unpack and start using it.": "Downloaden, extrahieren und verwenden.",
+	"No configuration needed:": "Keine Konfiguration benötigt:",
+	"Download, unpack and start using it.": "Downloaden, entpacken und verwenden.",
 
 	".bit domains": ".bit Domains",
-	"Decentralized domains using Namecoin cryptocurrency.": "Decentralisierte Domains mithilfe der Namecoin Krypto-Währung.",
+	"Decentralized domains using Namecoin cryptocurrency.": "Dezentralisierte Domains mithilfe der Namecoin-Kryptowährung.",
 
 	"No passwords": "Keine Passwörter",
-	"Your account is protected by the same cryptography as your Bitcoin wallet.": "Dein Konto ist geschützt durch die selbe kryptographie wie dein Bitcoin Portemonnaie.",
+	"Your account is protected by the same cryptography as your Bitcoin wallet.": "Dein Konto ist geschützt durch die selbe Kryptographie wie dein Bitcoin-Geldbörse.",
 
 	"Fast": "Schnell",
-	"Page response time is not limited by your connection speed.": "Die Seiten Antwortzeit ist nicht begrenzt durch deine Internetverbindung.",
+	"Page response time is not limited by your connection speed.": "Die Antwortzeit der Seiten ist nicht begrenzt durch deine Internetverbindung.",
 
 	"Dynamic content": "Dynamische Inhalte",
-	"Real-time updated, multi-user websites.": "In Echtzeit aktualisierte, mehr-benutzer Webseiten.",
+	"Real-time updated, multi-user websites.": "In Echtzeit aktualisierte, Mehrbenutzer-Webseiten.",
 
 	"How does it work?": "Wie funktioniert es?",
 
 	"Works everywhere": "Funktioniert überall",
-	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "Unterstützt alle modernen Browser auf<br>Windows, Linux oder Mac Platformen.",
+	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "Unterstützt alle modernen Browser auf<br>Windows, Linux oder Mac-Plattformen.",
 
 	"Anonymity": "Anonymität",
-	"You can easily hide your IP address using the Tor network.": "Du kannst deine IP einfach, durch Verwendung des Tor-Netzwerks, verstecken",
-	"Read the FAQ": "Lese das FAQ",
+	"You can easily hide your IP address using the Tor network.": "Du kannst deine IP einfach durch Verwendung des Tor-Netzwerks verstecken",
+	"Read the FAQ": "Lese die FAQ",
 
 	"Offline": "Offline",
-	"Browse the sites you&#39;re seeding even if your internet connection is down.": "Browse die Seiten die du seedest auch wenn keine Internet-Verbindung besteht.",
+	"Browse the sites you&#39;re seeding even if your internet connection is down.": "Lese die Seiten die du seedest auch wenn keine Internetverbindung besteht.",
 
 	"Open Source": "Open Source",
 	"Developed by the community for the community.": "Entwickelt von der Community für die Community.",
-	"Please donate to keep this project alive": "Bitte Spende um dieses Projekt am laufen zu halten",
+	"Please donate to keep this project alive": "Bitte spende um dieses Projekt am Laufen zu halten",
 
 	"We believe in": "Wir glauben an",
 	"open, free, and uncensored": "offene, freie und unzensierte",
-	"network and communication.": "Netzwerke und Kommunikation"
+	"network and communication.": "Netzwerke und Kommunikation."
 
 }
