@@ -1,1 +1,1 @@
-http://zeronet.io
+https://zeronet.io
