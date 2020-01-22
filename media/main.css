@@ -68,7 +68,8 @@ a:focus { transition: all 0.3s }
 .block-follow .icon:hover { fill: #7A26E2; transition: none; }
 .block-follow .icon:active { fill: #4962DD; transition: none; }
 
-.hosted { font-size: 15px; position: absolute; right: 10px; opacity: 0.7; height: 0px; margin-top: 10px; }
+.foot-end { font-size: 15px; position: absolute; right: 10px; opacity: 0.7; height: 0px; margin-top: 10px; }
+.foot-end a:hover { text-decoration: underline; }
 
 /* Language menu */
 .icon-lang { height: 16px; width: 16px; fill: white; vertical-align: middle; margin-right: 5px; }

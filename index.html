@@ -156,6 +156,7 @@ function download(platform) {
 
 <!-- Load fonts -->
 <script>
+  var b64mail = ["dGFtYXNAemVyb2", "ldC", "pbw=="].join("5")
   var cb = function() {
     var l = document.createElement('link'); l.rel = 'stylesheet';
     l.href = 'media/fonts.css';
@@ -169,6 +170,7 @@ function download(platform) {
 
   setTimeout(function() {
     document.getElementById("style").innerHTML += "\nh2 { visibility: visible !important }"
+    document.getElementById("foot-end").innerHTML = document.getElementById("foot-end").innerHTML.replace(/{mail}/g, atob(b64mail))
   }, 800)
 
   setTimeout(function() {
@@ -336,8 +338,11 @@ addAnimationDelay()
 
 <div style="clear: both"></div>
 
-<!-- Hosted -->
-<h3 class="hosted"><svg class="icon icon-ghost" style="height: 14px; width: 14px; opacity: 0.5; vertical-align: -1px;"><use xlink:href="#icon-ghost"></use></svg> Hosted by the wonderful <a href="https://www.vultr.com/?ref=6955457-3B" target="_blank">Vultr.com</a></h3>
+<!-- foot -->
+<h3 class="foot-end" id="foot-end">
+    <svg class="icon icon-contact" style="height: 14px; width: 14px; opacity: 0.5; vertical-align: -1px;"><use xlink:href="#icon-contact"></use></svg> Contact: <a href="mailto:{mail}">{mail}</a>, <a href="files/{mail}_pub.asc">[PGP ASC]</a> |
+    <svg class="icon icon-ghost" style="height: 14px; width: 14px; opacity: 0.5; vertical-align: -1px;"><use xlink:href="#icon-ghost"></use></svg> Hosted by the wonderful <a href="https://www.vultr.com/?ref=8382165-6G" target="_blank">Vultr.com</a>
+</h3>
 
 </body>
 </html>
