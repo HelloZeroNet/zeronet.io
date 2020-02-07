@@ -1,4 +1,4 @@
-body { background-color: #FFF; color: #393837; margin: 0px; padding: 0px; font-family: 'Helvetica Neue', 'Roboto', 'Segoe UI', 'Helvetica', 'Open Sans', 'Tahoma', sans-serif; font-weight: 200; padding-bottom: 50px; }
+body { background-color: #FFF; color: #393837; margin: 0px; padding: 0px; font-family: 'Helvetica Neue', 'Roboto', 'Segoe UI', 'Helvetica', 'Open Sans', 'Tahoma', sans-serif; font-weight: 200; }
 h1, h2, h3, h4, h5 { font-family: 'Helvetica Neue', 'Roboto', 'Segoe UI', 'Helvetica', 'Open Sans', 'Tahoma', sans-serif; font-weight: 200; font-size: 100px; margin: 20px; padding: 0px; }
 h1 { font-family: 'Text Me One', sans-serif; padding-bottom: 30px; line-height: 100px; }
 h2 { font-size: 35px; line-height: 47px; }
@@ -68,7 +68,7 @@ a:focus { transition: all 0.3s }
 .block-follow .icon:hover { fill: #7A26E2; transition: none; }
 .block-follow .icon:active { fill: #4962DD; transition: none; }
 
-.foot-end { font-size: 15px; position: absolute; right: 10px; opacity: 0.7; height: 0px; margin-top: 10px; }
+.foot-end { font-size: 15px; opacity: 0.7; margin-top: 10px; text-align: right; padding-bottom: 20px; }
 .foot-end a:hover { text-decoration: underline; }
 
 /* Language menu */
