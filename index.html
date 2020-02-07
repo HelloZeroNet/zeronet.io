@@ -78,10 +78,19 @@ if ($lang != "en") ob_start();
 </div>
 
 <script>
-if (navigator.appVersion.toLowerCase().indexOf("win")!=-1) document.body.className = "platform-windows";
-else if (navigator.appVersion.toLowerCase().indexOf("mac os x")!=-1) document.body.className = "platform-mac";
-else if (navigator.appVersion.toLowerCase().indexOf("android")!=-1) document.body.className = "platform-android";
-else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.className = "platform-linux";
+if (navigator.appVersion.toLowerCase().indexOf("win")!=-1) document.body.classList.add("platform-windows");
+else if (navigator.appVersion.toLowerCase().indexOf("mac os x")!=-1) document.body.classList.add("platform-mac");
+else if (navigator.appVersion.toLowerCase().indexOf("android")!=-1) document.body.classList.add("platform-android");
+else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.classList.add("platform-linux");
+
+function getLandingSiteAddress(hash) {
+    var match = hash.match(/^#site:([A-Za-z0-9\.]+)$/i);
+    if (match)
+        return match[1]
+}
+if (getLandingSiteAddress(location.hash)) {
+    document.body.classList.add("page-landing")
+}
 
 function download(platform) {
   var req = new XMLHttpRequest();
@@ -94,8 +103,62 @@ function download(platform) {
 }
 </script>
 
+<!-- Visit site -->
+<div class="block block-100 visit-top">
+ <h1>Visiting ZeroNet P2P site</h1>
+ <div class="visit-links" id="visit-links">
+  <h4>Using your local client <small>(Faster, you help to keep the site alive)</small></h4>
+  <a href="#" class="visit-link local" id="visit-link-local"><span>http://127.0.0.1/1AnySiteAddress</span></a>
+  <div class="visit-local-install" id="visit-local-install">Local client not detected: <a href="#head-top" onclick='return handleWhatIsThisClick()'>Install instructions</a></div>
+  <h4>Using proxy <small>(Slower, No installation requred, may be overloaded)</small></h4>
+  <div id="proxies"></div>
+ </div>
+ <h4 class="visit-what"><a href="#head-top" onclick='return handleWhatIsThisClick()'>What is ZeroNet?</a></h4>
+</div>
+
+<script>
+proxies = ["https://zeronet.now.im/"];
+
+function createElem(html_body) {
+    var div = document.createElement('div');
+    div.innerHTML = html_body.trim();
+    return div.firstChild;
+}
+
+site_address = getLandingSiteAddress(location.hash)
+if (site_address) {
+    var elem_local = document.getElementById("visit-link-local");
+    var address = "http://127.0.0.1:43110/" + site_address;
+    elem_local.href = address;
+    elem_local.firstChild.innerText = address;
+
+    // Add proxies
+    proxies.forEach(function(proxy_address) {
+        var elem = createElem('<a href="address" class="visit-link"><span>address</span></a>');
+        var address = proxy_address + site_address;
+        elem.href = address;
+        elem.firstChild.innerText = address;
+        document.getElementById("proxies").appendChild(elem);
+    });
+
+    // Check if local client running
+    elem_local_test = createElem('<link rel="stylesheet" href="http://127.0.0.1:43111/favicon.ico"/>');
+    elem_local_test.onerror = function() {
+        document.getElementById("visit-links").classList.add("no-local");
+    };
+    document.body.appendChild(elem_local_test);
+}
+
+function handleWhatIsThisClick() {
+    document.body.classList.remove("page-landing");
+    document.body.classList.add("page-all");
+    document.getElementById("head-top").scrollIntoView({ behavior: 'smooth'});
+    return false;
+}
+</script>
+
 <!-- Top -->
-<div class="block block-100 head-top">
+<div class="block block-100 head-top" id="head-top">
  <h1>ZeroNet</h1>
  <h2>Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network</h2>
  <div class="download download-windows">
@@ -178,8 +241,10 @@ function download(platform) {
   }, 4000)
 
   setTimeout(function() {
-    document.getElementsByTagName("h1")[0].style.opacity = 1
-    document.getElementsByTagName("h1")[0].style.transform = "none"
+    document.querySelectorAll("h1").forEach(function (elem) {
+        elem.style.opacity = 1
+        elem.style.transform = "none"
+    })
   }, 100)
 </script>
 <!-- EOF Load fonts -->
