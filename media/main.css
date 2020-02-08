@@ -38,9 +38,9 @@ a:focus { transition: all 0.3s }
 
 .visit-top {
 	transform: none; opacity: 1; min-height: 100vh;  color: white; text-transform: uppercase; padding-bottom: 20px;
-	background: #310d90 url("../img/visit-bg.svg") no-repeat top right; background-blend-mode: exclusion; display: none;
+	background: #310d90 url("../img/visit-bg.svg") no-repeat top right; display: none;
 }
-.visit-top h1 { padding-bottom: 0px; max-width: 900px; }
+.visit-top h1 { padding-bottom: 0px; max-width: 900px; color: white; }
 .visit-top h4 { font-size: 17px; margin-top: 20px; }
 .visit-top h4 small { opacity: 0.5; }
 .visit-top a { color: white; }
@@ -73,7 +73,7 @@ a:focus { transition: all 0.3s }
 .visit-top .visit-link.local:before {
     background: #fae3ff url("../img/logo.svg") no-repeat; background-size: 20px; background-position: 50% 50%; filter: none;
 }
-.visit-what { text-align: center; }
+.visit-top .link-what-is { text-align: center; margin-top: 50px; }
 
 .head-top { background: #4962DD; background: linear-gradient(45deg, #6B14D3 0, #7A26E2 25%, #4962DD 60%); color: white; text-align: center; padding: 70px 10px; min-height: 556px; }
 .head-top h1 { font-family: 'Text Me One', sans-serif; display: inline-block; border: 5px solid white; height: 97px; padding: 10px; line-height: 100px; }
@@ -125,6 +125,11 @@ a:focus { transition: all 0.3s }
 .opened #language_menu { visibility: visible; opacity: 1; pointer-events: all; transform: translateY(0); max-height: 1000px; }
 #language_menu a { display: block; padding: 10px 20px; border: none; color: black }
 #language_menu a:hover { background-color: #EEE }
+
+/* Lots of height space */
+@media only screen and (min-height: 700px) {
+	.visit-top h1 { margin-bottom: 100px; }
+}
 
 /* Medium screen */
 @media only screen and (max-width: 1200px) {
