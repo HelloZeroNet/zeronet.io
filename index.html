@@ -1,26 +1,3 @@
-<?php
-if (! isset($_SERVER['HTTPS']) or $_SERVER['HTTPS'] == 'off' ) {
-  $redirect_url = "https://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-  header("Location: $redirect_url");
-  exit();
-}
-if (isset($_GET["url"]))
-  $locale = $_GET["url"];
-else
-  $locale = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
-$locale = strtolower($locale);
-$locale_array = explode(",",$locale);
-foreach ($locale_array as $locale) {
-  $locale = preg_replace("#;.*#", "", $locale);
-  $locale = preg_replace("#[^a-z-]#", "", $locale);
-  $lang = preg_replace("#-.*#", "", $locale);
-  $lang_file = "languages/$locale.json";
-  if ($lang == "en" or is_file($lang_file)) break;
-}
-if (!$locale || !is_file($lang_file)) $locale = "en";
-
-if ($lang != "en") ob_start();
-?>
 <!DOCTYPE html>
 
 <html>
@@ -28,16 +5,11 @@ if ($lang != "en") ob_start();
  <title>ZeroNet: Decentralized websites using Bitcoin cryptography and the BitTorrent network</title>
  <meta charset="utf-8">
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
- <!--<?php /* We inline css using php include -->
  <link rel="stylesheet" href="media/main.css" />
- <!--*/ ?>-->
  <noscript><link rel="stylesheet" href="media/fonts.css" /></noscript>
  <meta name="viewport" content="width=device-width,initial-scale=1">
 
- <!-- Inline css... Thanks Google! -->
  <style id='style'>
- <?php include("media/main.css"); ?>
-
  h2,h3,h4,h5,h6,a,li,ul,small,span { visibility: hidden; } /* Avoid font flicker */
  h1 { opacity: 0; transition: all 0.3s ease-in-out; }
  @font-face {
@@ -59,7 +31,7 @@ if ($lang != "en") ob_start();
 <div id="language_changer">
  <a id="language" href="#" onclick="document.querySelector('#language_changer').classList.toggle('opened');return false">
   <svg class="icon icon-lang"><use xlink:href="#icon-lang"></use></svg>
-  <?php echo $locale; ?>
+  {locale}
  </a>
  <div id="language_menu">
   <a href="/zh">Chinese (Simplified)</a>
@@ -83,15 +55,6 @@ else if (navigator.appVersion.toLowerCase().indexOf("mac os x")!=-1) document.bo
 else if (navigator.appVersion.toLowerCase().indexOf("android")!=-1) document.body.classList.add("platform-android");
 else if (navigator.appVersion.toLowerCase().indexOf("linux")!=-1) document.body.classList.add("platform-linux");
 
-function getLandingSiteAddress(hash) {
-    var match = hash.match(/^#site:([A-Za-z0-9\.]+)$/i);
-    if (match)
-        return match[1]
-}
-if (getLandingSiteAddress(location.hash)) {
-    document.body.classList.add("page-landing")
-}
-
 function download(platform) {
   var req = new XMLHttpRequest();
   req.onload = function (res) {
@@ -103,59 +66,6 @@ function download(platform) {
 }
 </script>
 
-<!-- Visit site -->
-<div class="block block-100 visit-top">
- <h1>Visiting ZeroNet P2P site</h1>
- <div class="visit-links" id="visit-links">
-  <h4>Using your local client <small>(Faster, you help to keep the site alive)</small></h4>
-  <a href="#" class="visit-link local" id="visit-link-local"><span>http://127.0.0.1/1AnySiteAddress</span></a>
-  <div class="visit-local-install" id="visit-local-install">Local client not detected: <a href="#head-top" onclick='return handleWhatIsThisClick()'>Install instructions</a></div>
-  <h4>Using proxy <small>(Slower, No installation requred, may be overloaded)</small></h4>
-  <div id="proxies"></div>
- </div>
- <h4 class="visit-what"><a href="#head-top" onclick='return handleWhatIsThisClick()'>What is ZeroNet?</a></h4>
-</div>
-
-<script>
-proxies = ["https://zeronet.now.im/"];
-
-function createElem(html_body) {
-    var div = document.createElement('div');
-    div.innerHTML = html_body.trim();
-    return div.firstChild;
-}
-
-site_address = getLandingSiteAddress(location.hash)
-if (site_address) {
-    var elem_local = document.getElementById("visit-link-local");
-    var address = "http://127.0.0.1:43110/" + site_address;
-    elem_local.href = address;
-    elem_local.firstChild.innerText = address;
-
-    // Add proxies
-    proxies.forEach(function(proxy_address) {
-        var elem = createElem('<a href="address" class="visit-link"><span>address</span></a>');
-        var address = proxy_address + site_address;
-        elem.href = address;
-        elem.firstChild.innerText = address;
-        document.getElementById("proxies").appendChild(elem);
-    });
-
-    // Check if local client running
-    elem_local_test = createElem('<link rel="stylesheet" href="http://127.0.0.1:43111/favicon.ico"/>');
-    elem_local_test.onerror = function() {
-        document.getElementById("visit-links").classList.add("no-local");
-    };
-    document.body.appendChild(elem_local_test);
-}
-
-function handleWhatIsThisClick() {
-    document.body.classList.remove("page-landing");
-    document.body.classList.add("page-all");
-    document.getElementById("head-top").scrollIntoView({ behavior: 'smooth'});
-    return false;
-}
-</script>
 
 <!-- Top -->
 <div class="block block-100 head-top" id="head-top">
@@ -415,15 +325,3 @@ addAnimationDelay()
 
 </body>
 </html>
-
-<?php
-if ($lang != "en" && $lang != "") {
-  $body = ob_get_contents();
-  ob_clean();
-  $translates = json_decode(file_get_contents($lang_file));
-  foreach ($translates as $original => $translated) {
-    $body = str_replace(">$original<", ">$translated<", $body);
-  }
-  print $body;
-}
-?>
