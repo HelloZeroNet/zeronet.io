@@ -34,7 +34,7 @@
 
 <script>
 function getLandingSiteAddress(hash) {
-    var match = hash.match(/^#site:([A-Za-z0-9\.]+)$/i);
+    var match = hash.match(/^#site:(([A-Za-z0-9\.]+)(\/.*|$))/i);
     if (match)
         return match[1]
 }
