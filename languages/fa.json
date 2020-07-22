@@ -1,0 +1,62 @@
+{
+	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "زیرونت: سایت های غیر‌متمرکز با استفاده از رمزنگاری بیتکوین و شبکه بیت‌تورنت",
+	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "سایت های باز، ازاد و غیر‌قابل سانسور با استفاده از رمزنگاری بیتکوین و شبکه بیت‌تورنت",
+
+	"Download for Windows": "دانلود برای ویندوز",
+	"Unpack &middot; Run ZeroNet.exe": "باز‌کردن &middot; اجرای ZeroNet.exe",
+	"or": "یا",
+	"Other platforms and source code": "پلت‌فرم های دیگر و کد منبع",
+	"Download for macOS": "دانلود برای مک‌او‌اس",
+	"Unpack &middot; Run ZeroNet": "باز‌کردن &middot; اجرای ZeroNet",
+	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "باز‌کردن &middot; اجرای برنامه خط‌فرمان &middot; رها‌کردن ZeroNet در آن و فشردن کلید اینتر",
+	"Download for Linux 64bit": "دانلود برای لینوکس (۶۴بیتی)",
+	"Install instructions": "دستورالعمل نصب",
+	"Windows, Linux, Mac supported": "ویندوز، لینوکس، مک پشتیبانی میشوند",
+
+	"Peer-to-Peer": "همتا-به-همتا",
+	"Your content distributed directly to other visitors without any central server.": "محتوای شما به صورت مستقیم به دیگر بازدید کننده ها توزیع میشود بدون هیچ سرور مرکزی.",
+
+	"Uncensored": "غیر‌قابل سانسور",
+	"It's nowhere because it's everywhere!": "این هیچ‌جا نیست چون همه‌جا هست!",
+	"No hosting costs": "بدون هزینه‌های میزبانی",
+	"Sites are served by visitors.": "سایت ها توسط بازدید‌کننده ها میزبانی میشوند.",
+	"Always accessible": "همیشه در‌دسترس",
+	"No single point of failure.": "بدون هیچ نقطه ای از شکست.",
+
+	"Simple": "ساده",
+	"No configuration needed:": "بدون نیاز به پیکربندی:",
+	"Download, unpack and start using it.": "بارگیری، باز‌کردن و شروع به استفاده کردن .",
+
+	".bit domains": "دامنه های .bit",
+	"Decentralized domains using Namecoin cryptocurrency.": "دامنه های غیر‌متمرکز با استفاده از رمز‌ارز نیم‌کوین",
+
+	"No passwords": "بدون پسورد",
+	"Your account is protected by the same cryptography as your Bitcoin wallet.": "حساب شما توسط رمزنگاری مشابه با حساب بیتکوینی شما محافظت میشود. ",
+
+	"Fast": "سریع",
+	"Page response time is not limited by your connection speed.": "زمان پاسخ‌گویی صفحه محدودیت سرعت ارتباط شما نیست.",
+
+	"Dynamic content": "محتوای پویا",
+	"Real-time updated, multi-user websites.": "به‌روز رسانی بی‌درنگ، سایت های چند‌کاربره",
+
+	"How does it work?": "چگونه کار میکند؟",
+
+	"Works everywhere": "در هرجایی کار میکند",
+	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "از هر مرورگر مدرنی در ویندوز، لینوکس یا مک پشتیبانی میکند",
+
+	"Anonymity": "ناشناسی",
+	"You can easily hide your IP address using the Tor network.": "میتوانی به آسانی نشانی آیپی خود را با استفاده از شبکه تور مخفی کنی",
+	"Read the FAQ": "پرسش و پاسخ های متداول",
+
+	"Offline": "آفلاین",
+	"Browse the sites you&#39;re seeding even if your internet connection is down.": "سایت ها را حتی اگر اتصال اینترنت شما قطع شده است مرور کنید.",
+
+	"Open Source": "منبع باز",
+	"Developed by the community for the community.": "توسعه یافته توسط جامعه برای جامعه",
+	"Please donate to keep this project alive": "لطفا برای زنده نگه داشتن این پروژه حمایت کنید",
+
+	"We believe in": "ما باور داریم به",
+	"open, free, and uncensored": "شبکه و ارتباطات ",
+	"network and communication.": "باز، ازاد و غیر قابل سانسور"
+
+}
