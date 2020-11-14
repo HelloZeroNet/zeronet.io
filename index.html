@@ -61,7 +61,7 @@ function download(platform) {
   req.onload = function (res) {
     window.location = JSON.parse(req.responseText)[0].assets[0].browser_download_url;
   }
-  req.open("GET", "https://api.github.com/repos/HelloZeroNet/ZeroNet-kivy/releases", true);
+  req.open("GET", "https://api.github.com/repos/canewsin/zeronet_mobile/releases", true);
   req.send();
   return false;
 }
@@ -107,12 +107,13 @@ function download(platform) {
 
  <div class="download download-android">
   <div class="button-container">
-   <a href="https://play.google.com/store/apps/details?id=in.canews.zeronet" class="button button-outline">Download Android package (experimental)</a><br>
-   <small>11MB &middot; <span>Install &middot; Launch ZeroNet</span></small>
+   <a href="https://github.com/canewsin/zeronet_mobile/releases" class="button button-outline" onclick="return window.download('android')">Download Android package (experimental)</a><br>
+   <small>30MB &middot; <span>Install APK &middot; Launch ZeroNet</span></small>
   </div>
   <div class="button-container" style="margin: 0px 10px">
    <span style="margin: 0px 10px">or</span>
-   <a href="https://github.com/HelloZeroNet/ZeroNet-kivy">View and help develop Android version</a><br>
+   <a href="https://labs.xda-developers.com/store/app/in.canews.zeronet">XDA Labs</a>
+   <br>
   </div>
   <div class="button-container" style="margin: 0px 10px">
    <a href="https://github.com/HelloZeroNet/ZeroNet#user-content-how-to-join">Other platforms and source code</a>
