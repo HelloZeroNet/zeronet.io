@@ -1,8 +1,14 @@
 <?php
-if (isset($_GET["url"]))
-  $locale = $_GET["url"];
-else
+if (isset($_GET["url"])) {
+  $locale = preg_replace("#[^a-z-]#", "", $_GET["url"]);
+  if (!is_file("languages/$locale.json") and $locale != "en") {
+    header("HTTP/1.0 404 Not Found");
+    echo("<h1>Not found</h1>");
+    exit();
+  }
+} else {
   $locale = $_SERVER["HTTP_ACCEPT_LANGUAGE"];
+}
 $locale = strtolower($locale);
 $locale_array = explode(",",$locale);
 foreach ($locale_array as $locale) {
