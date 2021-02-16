@@ -1,0 +1,61 @@
+{
+	"ZeroNet: Decentralized websites using Bitcoin crypto and the BitTorrent network": "zeronet: decentralize websites bitcoin crypto bittorrent network je",
+	"Open, free and uncensorable websites,<br>using Bitcoin cryptography and BitTorrent network": "uncensorable websites je 'eb, tlhab<br>bitcoin cryptography bittorrent network je",
+
+	"Download for Windows": "download windows",
+	"Unpack &middot; Run ZeroNet.exe": "vI'ughHa'moHlaw'mo' &middot; qet zeronet.exe",
+	"or": "ghap",
+	"Other platforms and source code": "latlh je Hal ngoq platforms",
+	"Download for macOS": "download macos",
+	"Unpack &middot; Run ZeroNet": "vI'ughHa'moHlaw'mo' &middot; qet zeronet",
+	"Unpack &middot; Open Terminal application &middot; Drop ZeroNet on it and press enter.": "vI'ughHa'moHlaw'mo' &middot; mInDu'lIj application Terminal &middot; 'el chagh zeronet 'oH 'ej press.",
+	"Download for Linux 64bit": "linux 64 bit download",
+	"Install instructions": "instructions jom",
+	"Windows, Linux, Mac supported": "windows, linux, mac Qutlh",
+
+	"Peer-to-Peer": "peer--Peer",
+	"Your content distributed directly to other visitors without any central server.": "'a ghIH Hoch wo' Hutlh jabwI' vay' central visitors latlh distributed.",
+
+	"Uncensored": "uncensored",
+	"It's nowhere because it's everywhere!": "nowhere HoSqu'mo' tlhIngan Dat!",
+	"No hosting costs": "pagh host costs",
+	"Sites are served by visitors.": "toy' Daq pong visitors.",
+	"Always accessible": "reH accessible",
+	"No single point of failure.": "pagh Vas lang failure.",
+
+	"Simple": "nap",
+	"No configuration needed:": "configuration nIS:",
+	"Download, unpack and start using it.": "download, vI'ughHa'moHlaw'mo' 'ej 'oH lo' start.",
+
+	".bit domains": ".bit SoQ",
+	"Decentralized domains using Namecoin cryptocurrency.": "decentralize yer namecoin cryptocurrency lo'.",
+
+	"No passwords": "pagh mu'wIj",
+	"Your account is protected by the same cryptography as your Bitcoin wallet.": "QaD account jIba'taHvIS rap cryptography je bitcoin wallet.",
+
+	"Fast": "tlhoS",
+	"Page response time is not limited by your connection speed.": "wej vuS page response poH pong connection speed.",
+
+	"Dynamic content": "'a ghIH dynamic",
+	"Real-time updated, multi-user websites.": "real-time update 'eb, So'meH multi-user websites.",
+
+	"How does it work?": "chay' Qapbej?",
+
+	"Works everywhere": "Dat Qap",
+	"Supports any modern browser on<br>Windows, Linux or Mac platforms.": "browser vay' modern Qutlh<br>platforms windows, linux pagh mac.",
+
+	"Anonymity": "anonymity",
+	"You can easily hide your IP address using the Tor network.": "ip SoQ tor network lo' laH Hergh So' SoH.",
+	"Read the FAQ": "FAQ laD",
+
+	"Offline": "offline",
+	"Browse the sites you&#39;re seeding even if your internet connection is down.": "Daq puq SoH vabDot tInwI' internet connection browse.",
+
+	"Open Source": "mInDu'lIj Hal",
+	"Developed by the community for the community.": "Hach pong community community.",
+	"Please donate to keep this project alive": "DubelmoHchugh donate jInmol alive pol",
+
+	"We believe in": "Har neH",
+	"open, free, and uncensored": "'eb, tlhab 'ej uncensored",
+	"network and communication.": "network 'ej QumpIn."
+}
